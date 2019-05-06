@@ -13,7 +13,8 @@
 ## Status
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/commits/master)
 [![GitHub Search Hit Counter](https://img.shields.io/github/search/richardtaylordawson/react-cuttlefish/goto.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02ee35b7c3e14b6da802677e73fbdb32)](https://www.codacy.com/app/richardtaylordawson/react-cuttlefish?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=richardtaylordawson/react-cuttlefish&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0bb94643f7a9421ca1febfa354c5d030)](https://www.codacy.com/app/richardtaylordawson/react-cuttlefish?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=richardtaylordawson/react-cuttlefish&amp;utm_campaign=Badge_Grade)
+[![NPM Downloads](https://img.shields.io/npm/dw/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
 [![GitHub Repo Size in Size](https://img.shields.io/github/repo-size/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
 [![GitHub Code Size in Size](https://img.shields.io/github/languages/code-size/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
