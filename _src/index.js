@@ -1,7 +1,7 @@
-// Main Styling/Position Components
 // Global Theme
 import ReactCuttlefishTheme from "./components/theme/global"
 
+// Main Styling/Position Components
 import Section from "./components/Section"
 import Columns from "./components/Columns"
 

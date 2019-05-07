@@ -1,4 +1,5 @@
 var path = require("path");
+
 module.exports = {
   entry: "./_src/index.js",
   output: {

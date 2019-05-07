@@ -1,8 +1,39 @@
 {
   "name": "react-cuttlefish",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "Collection of generic components that can be used to easily build a website.",
   "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack --watch --mode development & webpack-dev-server --open --mode development",
+    "build": "webpack --mode development"
+  },
+  "author": {
+    "name": "Richard Taylor Dawson",
+    "email": "richard.taylor.dawson@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/richardtaylordawson/react-cuttlefish.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "cuttlefish",
+    "react",
+    "component",
+    "components",
+    "react-component",
+    "ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/richardtaylordawson/react-cuttlefish/issues"
+  },
+  "homepage": "https://github.com/richardtaylordawson/react-cuttlefish#readme",
+  "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
@@ -11,17 +42,11 @@
     "webpack": "^4.12.0"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "prop-types": "^15.7.2"
   },
-  "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack"
-  },
-  "author": {
-    "name": "Richard Taylor Dawson",
-    "email": "richard.taylor.dawson@gmail.com"
-  },
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

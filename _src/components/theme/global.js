@@ -3,16 +3,18 @@ import { Global, css } from "@emotion/core"
 
 import colors from "./color"
 
-const ReactCuttlefishTheme = (theme) => {
-  colors.primary = theme.primary && theme.primary
-  colors.secondary = theme.secondary && theme.secondary
-  colors.success = theme.success && theme.success
-  colors.danger = theme.danger && theme.danger
-  colors.info = theme.info && theme.info
-  colors.light = theme.light && theme.light
-  colors.dark = theme.dark && theme.dark
-  colors.muted = theme.muted && theme.muted
-  colors.white = theme.white && theme.white
+const ReactCuttlefishTheme = ({theme}) => {
+
+  // Override any colors that are passed in
+  colors.primary = theme.primary ? theme.primary : colors.primary
+  colors.secondary = theme.secondary ? theme.secondary : colors.secondary
+  colors.success = theme.success ? theme.success : colors.success
+  colors.danger = theme.danger ? theme.danger : colors.danger
+  colors.info = theme.info ? theme.info : colors.info
+  colors.light = theme.light ? theme.light : colors.light
+  colors.dark = theme.dark ? theme.dark : colors.dark
+  colors.muted = theme.muted ? theme.muted : colors.muted
+  colors.white = theme.white ? theme.white : colors.white
 
   return (
     <Global
@@ -21,6 +23,22 @@ const ReactCuttlefishTheme = (theme) => {
         .text-center { text-align: center; }
         .text-left { text-align: left; }
         .text-right { text-align: right; }
+
+        /* Float */
+        .pull-left { float: left; }
+        .pull-right { float: right; }
+
+        /* Center Block */
+        .center-block {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Display */
+        .show { display: block; }
+        .hidden { display: none; }
+        .invisible { visibility: hidden; }
 
         /* Text Color */
         .text-primary { color: ${colors.primary}; }
