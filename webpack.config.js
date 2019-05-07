@@ -14,10 +14,7 @@ module.exports = {
         include: path.resolve(__dirname, "_src"),
         exclude: /(node_modules|bower_components|dist)/,
         use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["env"]
-          }
+          loader: "babel-loader"
         }
       }
     ]
