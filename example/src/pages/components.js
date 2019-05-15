@@ -1,6 +1,13 @@
 import React from "react"
+<<<<<<< HEAD
 import { Link } from "@reach/router"
 import {
+=======
+
+// Core
+import {
+  ReactCuttlefishTheme,
+>>>>>>> 058c948271c694b4399ff82d1d0e040697a93a99
   Section,
   Button,
   Columns,
@@ -15,12 +22,19 @@ import {
 
 const Components = () => (
   <div>
+<<<<<<< HEAD
     <Section className="mt-sm">
       <div className="text-left mb-xl">
         <h5 className="inline text-danger">reactCuttleFish - Components</h5>
         <div className="pull-right">
           <Link to="/">Home</Link>
         </div>
+=======
+    <Section>
+      <div className="center-block text-center mb-xl">
+        <h1 className="mb-sm text-danger">reactCuttleFish</h1>
+        <h6 className="mb-md">Collection of generic components <br/>that can be used to easily build a website.</h6>
+>>>>>>> 058c948271c694b4399ff82d1d0e040697a93a99
       </div>
       <div className="center-block mb-xl">
         <h4 className="text-primary">Button</h4>
@@ -152,7 +166,11 @@ const Components = () => (
           <h5>Warning</h5>
           Surprise! Content here.
         </Accordion>
+<<<<<<< HEAD
         <code className="mt-xl"><span className="text-warning">import</span> Accordion <span className="text-warning">from</span> "react-cuttlefish"</code>
+=======
+        <code className="mt-xl"><span className="text-warning">import</span> Accordion, AccordionHeader, AccordionContent <span className="text-warning">from</span> "react-cuttlefish"</code>
+>>>>>>> 058c948271c694b4399ff82d1d0e040697a93a99
       </div>
     </Section>
   </div>

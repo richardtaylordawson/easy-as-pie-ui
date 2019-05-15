@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Router } from "@reach/router"
 
+
 import MainLayout from "./layouts/MainLayout"
 import Home from "./pages/index"
 import Components from "./pages/components"
