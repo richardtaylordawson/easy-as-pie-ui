@@ -1,6 +1,6 @@
 {
   "name": "react-cuttlefish",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "",
   "author": "richardtaylordawson",
   "license": "MIT",
@@ -22,6 +22,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
@@ -46,6 +48,8 @@
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
     "react-scripts": "^1.1.4",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",

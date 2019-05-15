@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
+import { Router } from "@reach/router"
 
-import ExampleComponent from 'react-cuttlefish'
+import MainLayout from "./layouts/MainLayout"
+import Home from "./pages/index"
+import Components from "./pages/components"
 
-export default class App extends Component {
-  render () {
+class App extends Component {
+  render() {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
+      <MainLayout>
+        <Router>
+          <Home path="/" />
+          <Components path="components" />
+        </Router>
+      </MainLayout>
     )
   }
 }
+
+export default App;
