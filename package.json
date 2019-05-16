@@ -61,5 +61,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-starfield-animation": "^1.0.1"
+  }
 }

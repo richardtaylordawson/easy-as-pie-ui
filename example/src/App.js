@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <MainLayout>
         <Router>
-          <Home path="/" />
-          <Components path="components" />
+          <Home path={process.env.PUBLIC_URL + '/'} />
+          <Components path={process.env.PUBLIC_URL + '/components'} />
         </Router>
       </MainLayout>
     )

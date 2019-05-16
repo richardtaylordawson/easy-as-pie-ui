@@ -17,7 +17,6 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
   Colors.light = theme.hasOwnProperty("light") ? theme.light : Colors.light
   Colors.dark = theme.hasOwnProperty("dark") ? theme.dark : Colors.dark
   Colors.muted = theme.hasOwnProperty("muted") ? theme.muted : Colors.muted
-  Colors.white = theme.hasOwnProperty("white") ? theme.white : Colors.white
 
   return (
     <Global
@@ -478,6 +477,159 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
           text-decoration: none;
           display: inline-block;
           margin: 5px;
+        }
+
+        .btn-primary {
+          color: ${Colors.white};
+          background-color: ${Colors.primary};
+          border-color: ${Colors.primary};
+        }
+
+        .btn-secondary {
+          color: ${Colors.white};
+          background-color: ${Colors.secondary};
+          border-color: ${Colors.secondary};
+        }
+
+        .btn-success {
+          color: ${Colors.white};
+          background-color: ${Colors.success};
+          border-color: ${Colors.success};
+        }
+
+        .btn-danger {
+          color: ${Colors.white};
+          background-color: ${Colors.danger};
+          border-color: ${Colors.danger};
+        }
+
+        .btn-warning {
+          color: ${Colors.white};
+          background-color: ${Colors.warning};
+          border-color: ${Colors.warning};
+        }
+
+        .btn-muted {
+          color: ${Colors.white};
+          background-color: ${Colors.muted};
+          border-color: ${Colors.muted};
+        }
+
+        .btn-primary-outline {
+          color: ${Colors.primary};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.primary};
+
+          &:hover {
+            background-color: ${Colors.primary};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-secondary-outline {
+          color: ${Colors.secondary};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.secondary};
+
+          &:hover {
+            background-color: ${Colors.secondary};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-success-outline {
+          color: ${Colors.success};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.success};
+
+          &:hover {
+            background-color: ${Colors.success};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-danger-outline {
+          color: ${Colors.danger};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.danger};
+
+          &:hover {
+            background-color: ${Colors.danger};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-warning-outline {
+          color: ${Colors.warning};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.warning};
+
+          &:hover {
+            background-color: ${Colors.warning};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-info-outline {
+          color: ${Colors.info};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.info};
+
+          &:hover {
+            background-color: ${Colors.info};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-light-outline {
+          color: ${Colors.light};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.light};
+
+          &:hover {
+            background-color: ${Colors.light};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-dark-outline {
+          color: ${Colors.dark};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.dark};
+
+          &:hover {
+            background-color: ${Colors.dark};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
+        }
+
+        .btn-muted-outline {
+          color: ${Colors.muted};
+          background-color: transparent;
+          background-image: none;
+          border-color: ${Colors.muted};
+
+          &:hover {
+            background-color: ${Colors.muted};
+            color: ${Colors.white};
+            transition: all 0.3s;
+          }
         }
 
         .stronger {

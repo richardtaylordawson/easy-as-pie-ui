@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link } from "@reach/router"
 import {
   Section,
@@ -14,7 +14,7 @@ import {
 } from "react-cuttlefish"
 
 const Components = () => (
-  <div>
+  <Fragment>
     <Section className="mt-sm">
       <div className="text-left mb-xl">
         <h5 className="inline text-danger">reactCuttleFish - Components</h5>
@@ -155,7 +155,7 @@ const Components = () => (
         <code className="mt-xl"><span className="text-warning">import</span> Accordion <span className="text-warning">from</span> "react-cuttlefish"</code>
       </div>
     </Section>
-  </div>
+  </Fragment>
 )
 
 export default Components
