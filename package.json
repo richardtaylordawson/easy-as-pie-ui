@@ -63,6 +63,8 @@
     "dist"
   ],
   "dependencies": {
+    "hex-rgb": "^4.1.0",
+    "hex-to-hsl": "^1.0.2",
     "react-starfield-animation": "^1.0.1"
   }
 }
