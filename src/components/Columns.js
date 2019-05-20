@@ -12,7 +12,7 @@ const FlexContainer = styled.div`
 `
 
 const Column = styled.div`
-  width: ${props => 100 / props.numberOfColumns}%;
+  width: ${props => props.columnWidth}%;
   margin: ${props => props.collapseMargin ? "0" : "30px"};
 
   ${Breakpoints["medium-down"]} {
@@ -21,11 +21,11 @@ const Column = styled.div`
   }
 `
 
-const Columns = ({children, collapseMargin}) => (
+const Columns = ({children, collapseMargin, split}) => (
   <FlexContainer>
     {
       children.map((child, index, children) => (
-        <Column key={index} numberOfColumns={children.length} collapseMargin={collapseMargin}>
+        <Column key={index} columnWidth={split ? split[index] : 100 / children.length} collapseMargin={collapseMargin}>
           {child}
         </Column>
       ))
@@ -35,7 +35,8 @@ const Columns = ({children, collapseMargin}) => (
 
 Columns.propTypes = {
   children: PropTypes.node.isRequired,
-  collapseMargin: PropTypes.bool
+  collapseMargin: PropTypes.bool,
+  split: PropTypes.array
 }
 
 export default Columns

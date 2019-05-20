@@ -1,5 +1,6 @@
 // Global Theme && Breakpoints
 import Breakpoints from "./theme/Breakpoints"
+import ReactCuttlefishColors from "./theme/Colors"
 import ReactCuttlefishTheme from "./theme/Global"
 
 // Main Styling/Position Components
@@ -18,6 +19,7 @@ import InputGroup from "./components/ui/InputGroup"
 
 export {
   Breakpoints,
+  ReactCuttlefishColors,
   ReactCuttlefishTheme,
   Columns,
   Section,

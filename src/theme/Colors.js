@@ -1,14 +1,18 @@
-const ReactCuttlefishColors = {
-  "primary": "#0083f8",
-  "secondary": "#6a767c",
-  "success": "#00a750",
-  "danger": "#ed2047",
-  "warning": "#ffbc3c",
-  "info": "#00a5b6",
-  "light": "#f8f9fa",
-  "dark": "#323a3f",
-  "muted": "#9da2a7",
-  "white": "#ffffff"
+const Colors = {
+  "red": "#DB2828",
+  "orange": "#F2711C",
+  "yellow": "#FBBD08",
+  "olive": "#B5CC18",
+  "green": "#21BA45",
+  "teal": "#00B5AD",
+  "blue": "#2185D0",
+  "violet": "#6435C9",
+  "purple": "#A333C8",
+  "pink": "#E03997",
+  "brown": "#A5673F",
+  "grey": "#767676",
+  "light-grey": "#bbb",
+  "black": "#1B1C1D"
 }
 
-module.exports = ReactCuttlefishColors
+module.exports = Colors

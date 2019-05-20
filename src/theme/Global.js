@@ -1,22 +1,16 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
+import hexHSL from "hex-to-hsl"
+import hexRGB from "hex-rgb"
 
 import Colors from "./Colors"
 import Spacing from "./Spacing"
 import Breakpoints from "./Breakpoints"
 
-const ReactCuttlefishTheme = ({theme = {}}) => {
+const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
 
-  // Override any colors that are passed in
-  Colors.primary = theme.hasOwnProperty("primary") ? theme.primary : Colors.primary
-  Colors.secondary = theme.hasOwnProperty("secondary") ? theme.secondary : Colors.secondary
-  Colors.success = theme.hasOwnProperty("success") ? theme.success : Colors.success
-  Colors.danger = theme.hasOwnProperty("danger") ? theme.danger : Colors.danger
-  Colors.warning = theme.hasOwnProperty("warning") ? theme.warning : Colors.warning
-  Colors.info = theme.hasOwnProperty("info") ? theme.info : Colors.info
-  Colors.light = theme.hasOwnProperty("light") ? theme.light : Colors.light
-  Colors.dark = theme.hasOwnProperty("dark") ? theme.dark : Colors.dark
-  Colors.muted = theme.hasOwnProperty("muted") ? theme.muted : Colors.muted
+  Object.keys(Colors).map(key => ( Colors[key] = colors.hasOwnProperty(key) ? colors[key] : Colors[key] ))
+  Object.keys(Spacing).map(key => ( Spacing[key] = spacing.hasOwnProperty(key) ? spacing[key] : Spacing[key] ))
 
   return (
     <Global
@@ -31,7 +25,7 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
           font-family: sans-serif;
           line-height: 1.15;
           -webkit-text-size-adjust: 100%;
-          -webkit-tap-highlight-color: ${Colors.dark};
+          -webkit-tap-highlight-color: #000;
         }
 
         article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -44,9 +38,9 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
           font-size: 1rem;
           font-weight: 400;
           line-height: 1.5;
-          color: ${Colors.dark};
+          color: #212529;
           text-align: left;
-          background-color: ${Colors.white};
+          background-color: #FFF;
         }
 
         [tabindex="-1"]:focus {
@@ -57,7 +51,7 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
           box-sizing: content-box;
           height: 10;
           overflow: visible;
-          border: 0.5px solid ${Colors.muted};
+          border: 0.5px solid #ccc;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -164,12 +158,11 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
         samp {
           font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
           font-size: 1em;
-          background-color: ${Colors.dark};
-          color: ${Colors.white};
+          background-color: #323a3f;
+          color: #FFF;
           padding: 15px;
           width: 100%;
           display: block;
-          border-radius: 5px;
         }
 
         pre {
@@ -433,18 +426,6 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
         .notch-bottom:before { top: 100%; margin-top: -15px; }
         .notch-top:before { bottom: 100%; margin-bottom: -15px; }
 
-        /* Notch Colors */
-        .notch-primary:before { background-color: ${Colors.primary}; }
-        .notch-secondary:before { background-color: ${Colors.secondary}; }
-        .notch-success:before { background-color: ${Colors.success}; }
-        .notch-danger:before { background-color: ${Colors.danger}; }
-        .notch-warning:before { background-color: ${Colors.warning}; }
-        .notch-info:before { background-color: ${Colors.info}; }
-        .notch-light:before { background-color: ${Colors.light}; }
-        .notch-dark:before { background-color: ${Colors.dark}; }
-        .notch-muted:before { background-color: ${Colors.muted}; }
-        .notch-white:before { background-color: ${Colors.white}; }
-
         /* Content Sizes */
         .content-xs { max-width: 522px; }
         .content-sm { max-width: 658px; }
@@ -476,200 +457,62 @@ const ReactCuttlefishTheme = ({theme = {}}) => {
           text-align: center;
           text-decoration: none;
           display: inline-block;
-          margin: 5px;
+          margin: 0 10px 10px 0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
         }
 
-        .btn-primary {
-          color: ${Colors.white};
-          background-color: ${Colors.primary};
-          border-color: ${Colors.primary};
-        }
+        ${Object.keys(Colors).map(key => {
+          let currentHSL = hexHSL(Colors[key])
+          let currentRGB = hexRGB(Colors[key])
 
-        .btn-secondary {
-          color: ${Colors.white};
-          background-color: ${Colors.secondary};
-          border-color: ${Colors.secondary};
-        }
+          // Darken or lighten hover color depending on original color
+          currentHSL[2] *= (currentHSL[2] * .8 < 10)
+            ? 1.8
+            : .8
 
-        .btn-success {
-          color: ${Colors.white};
-          background-color: ${Colors.success};
-          border-color: ${Colors.success};
-        }
+          return `
+            .btn-${key} {
+              color: #FFF;
+              background-color: ${Colors[key]};
+              border: 1px solid ${Colors[key]};
 
-        .btn-danger {
-          color: ${Colors.white};
-          background-color: ${Colors.danger};
-          border-color: ${Colors.danger};
-        }
+              &:hover {
+                background-color: hsl(${currentHSL[0]}, ${currentHSL[1]}%, ${currentHSL[2]}%);
+                border-color: 1px solid hsl(${currentHSL[0]}, ${currentHSL[1]}%, ${currentHSL[2] }%);
+                transition: all 0.3s;
+              }
+            }
 
-        .btn-warning {
-          color: ${Colors.white};
-          background-color: ${Colors.warning};
-          border-color: ${Colors.warning};
-        }
+            .btn-${key}-outline {
+              color: ${Colors[key]};
+              border: 1px solid ${Colors[key]};
+              background-color: transparent;
+              background-image: none;
 
-        .btn-muted {
-          color: ${Colors.white};
-          background-color: ${Colors.muted};
-          border-color: ${Colors.muted};
-        }
+              &:hover {
+                background-color: ${Colors[key]};
+                color: #FFF;
+                transition: all 0.3s;
+              }
+            }
 
-        .btn-primary-outline {
-          color: ${Colors.primary};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.primary};
+            .btn-${key}:focus,
+            .btn-${key}-outline:focus {
+              outline: 0;
+              box-shadow: 0 0 0 0.2rem rgba(${currentRGB.red}, ${currentRGB.green}, ${currentRGB.blue}, 0.50);
+            }
 
-          &:hover {
-            background-color: ${Colors.primary};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-secondary-outline {
-          color: ${Colors.secondary};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.secondary};
-
-          &:hover {
-            background-color: ${Colors.secondary};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-success-outline {
-          color: ${Colors.success};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.success};
-
-          &:hover {
-            background-color: ${Colors.success};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-danger-outline {
-          color: ${Colors.danger};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.danger};
-
-          &:hover {
-            background-color: ${Colors.danger};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-warning-outline {
-          color: ${Colors.warning};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.warning};
-
-          &:hover {
-            background-color: ${Colors.warning};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-info-outline {
-          color: ${Colors.info};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.info};
-
-          &:hover {
-            background-color: ${Colors.info};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-light-outline {
-          color: ${Colors.light};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.light};
-
-          &:hover {
-            background-color: ${Colors.light};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-dark-outline {
-          color: ${Colors.dark};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.dark};
-
-          &:hover {
-            background-color: ${Colors.dark};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
-
-        .btn-muted-outline {
-          color: ${Colors.muted};
-          background-color: transparent;
-          background-image: none;
-          border-color: ${Colors.muted};
-
-          &:hover {
-            background-color: ${Colors.muted};
-            color: ${Colors.white};
-            transition: all 0.3s;
-          }
-        }
+            .text-${key} { color: ${Colors[key]}; }
+            .bg-${key} { background-color: ${Colors[key]}; }
+            .bc-${key} { border-color: ${Colors[key]}; }
+            .notch-${key}:before { background-color: ${Colors[key]}; }
+          `
+        })}
 
         .stronger {
           font-weight: 800;
         }
-        /* Text Color */
-        .text-primary { color: ${Colors.primary}; }
-        .text-secondary { color: ${Colors.secondary}; }
-        .text-success { color: ${Colors.success}; }
-        .text-danger { color: ${Colors.danger}; }
-        .text-warning { color: ${Colors.warning}; }
-        .text-info { color: ${Colors.info}; }
-        .text-light { color: ${Colors.light}; }
-        .text-dark { color: ${Colors.dark}; }
-        .text-muted { color: ${Colors.muted}; }
-        .text-white { color: ${Colors.white}; }
-
-        /* Background Color */
-        .bg-primary { background-color: ${Colors.primary}; }
-        .bg-secondary { background-color: ${Colors.secondary}; }
-        .bg-success { background-color: ${Colors.success}; }
-        .bg-danger { background-color: ${Colors.danger}; }
-        .bg-warning { background-color: ${Colors.warning}; }
-        .bg-info { background-color: ${Colors.info}; }
-        .bg-light { background-color: ${Colors.light}; }
-        .bg-dark { background-color: ${Colors.dark}; }
-        .bg-muted { background-color: ${Colors.muted}; }
-        .bg-white { background-color: ${Colors.white}; }
-
-        /* Border Color */
-        .bc-primary { border-color: ${Colors.primary}; }
-        .bc-secondary { border-color: ${Colors.secondary}; }
-        .bc-success { border-color: ${Colors.success}; }
-        .bc-danger { border-color: ${Colors.danger}; }
-        .bc-warning { border-color: ${Colors.warning}; }
-        .bc-info { border-color: ${Colors.info}; }
-        .bc-light { border-color: ${Colors.light}; }
-        .bc-dark { border-color: ${Colors.dark}; }
-        .bc-muted { border-color: ${Colors.muted}; }
-        .bc-white { border-color: ${Colors.white}; }
 
         /* Border Width */
         .bw-s-1 {
