@@ -1,10 +1,17 @@
 import React, { Component } from "react"
 import { Router } from "@reach/router"
 
-
 import MainLayout from "./layouts/MainLayout"
+
+// Main Page
 import Home from "./pages/index"
-import Components from "./pages/components"
+
+// Components Pages
+import AccordionPage from "./pages/components/AccordionPage"
+import BorderContentPage from "./pages/components/BorderContentPage"
+import ButtonsPage from "./pages/components/ButtonsPage"
+import CardPage from "./pages/components/CardPage"
+import InputPage from "./pages/components/InputPage"
 
 class App extends Component {
   render() {
@@ -12,7 +19,11 @@ class App extends Component {
       <MainLayout>
         <Router>
           <Home path={process.env.PUBLIC_URL + '/'} />
-          <Components path={process.env.PUBLIC_URL + '/components'} />
+          <AccordionPage path={process.env.PUBLIC_URL + '/components/accordion'} />
+          <BorderContentPage path={process.env.PUBLIC_URL + '/components/border-content'} />
+          <ButtonsPage path={process.env.PUBLIC_URL + '/components/buttons'} />
+          <CardPage path={process.env.PUBLIC_URL + '/components/card'} />
+          <InputPage path={process.env.PUBLIC_URL + '/components/input'} />
         </Router>
       </MainLayout>
     )
