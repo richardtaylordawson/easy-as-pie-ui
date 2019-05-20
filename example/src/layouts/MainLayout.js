@@ -1,13 +1,19 @@
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
-
-import { ReactCuttlefishTheme } from "react-cuttlefish"
+import { ReactCuttlefishTheme, Navbar, Nav, NavLink } from "react-cuttlefish"
 
 const MainLayout = ({ children }) => (
-  <div>
+  <Fragment>
     <ReactCuttlefishTheme />
+    <Navbar color="red">
+      <Nav>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/">Getting Started</NavLink>
+        <NavLink href="/components/accordion">Components</NavLink>
+      </Nav>
+    </Navbar>
     <main>{children}</main>
-  </div>
+  </Fragment>
 )
 
 MainLayout.propTypes = {

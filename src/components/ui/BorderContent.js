@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
 const Container = styled.div`
-  padding: 5px 16px;
+  padding: 15px;
   border-style: solid;
   border-width: ${props => props.border};
 `

@@ -4,7 +4,7 @@ import { Router } from "@reach/router"
 import MainLayout from "./layouts/MainLayout"
 
 // Main Page
-import Home from "./pages/index"
+import Home from "./pages/Index"
 
 // Position Pages
 import ColumnsPage from "./pages/components/ColumnsPage"
@@ -16,6 +16,7 @@ import BorderContentPage from "./pages/components/BorderContentPage"
 import ButtonsPage from "./pages/components/ButtonsPage"
 import CardPage from "./pages/components/CardPage"
 import InputPage from "./pages/components/InputPage"
+import NavbarPage from "./pages/components/NavbarPage"
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
           <ButtonsPage path={process.env.PUBLIC_URL + '/components/buttons'} />
           <CardPage path={process.env.PUBLIC_URL + '/components/card'} />
           <InputPage path={process.env.PUBLIC_URL + '/components/input'} />
+          <NavbarPage path={process.env.PUBLIC_URL + '/components/navbar'} />
         </Router>
       </MainLayout>
     )

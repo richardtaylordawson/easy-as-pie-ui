@@ -16,6 +16,10 @@ import CardContent from "./components/ui/CardContent"
 import CardHeader from "./components/ui/CardHeader"
 import Input from "./components/ui/Input"
 import InputGroup from "./components/ui/InputGroup"
+import Navbar from "./components/ui/Navbar"
+import Nav from "./components/ui/Nav"
+import NavLink from "./components/ui/NavLink"
+import Table from "./components/ui/Table"
 
 export {
   Breakpoints,
@@ -30,5 +34,9 @@ export {
   CardContent,
   CardHeader,
   Input,
-  InputGroup
+  InputGroup,
+  Navbar,
+  Nav,
+  NavLink,
+  Table
 }
