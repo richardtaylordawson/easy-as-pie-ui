@@ -2,10 +2,10 @@ import React from "react"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
-const CardPage = () => (
+const SectionPage = () => (
   <ComponentsLayout>
-    <h4 className="mb-lg">Card</h4>
+    <h4 className="mb-lg">Section</h4>
   </ComponentsLayout>
 )
 
-export default CardPage
+export default SectionPage

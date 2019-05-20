@@ -1,34 +1,11 @@
-import React, { Fragment } from "react"
-import {
-  Section,
-  Accordion,
-  Columns,
-  BorderContent
-} from "react-cuttlefish"
+import React from "react"
 
-import ComponentsNav from "./../../components/ComponentsNav"
+import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
 const AccordionPage = () => (
-  <Fragment>
-    <Section>
-      <Columns split={[75, 25]}>
-        <div>
-          <h4 className="mb-lg">Accordion</h4>
-          <BorderContent sides={"true true false true"} color="light-grey" size="1" radius="5">
-            <h5 className="text-grey">Example</h5>
-            <Accordion>
-              <h5>This is an example</h5>
-              <p>testing some stuff</p>
-            </Accordion>
-          </BorderContent>
-          <code><span className="text-yellow">import</span> Accordion <span className="text-warning">from</span> "react-cuttlefish"</code>
-        </div>
-        <div>
-          <ComponentsNav />
-        </div>
-      </Columns>
-    </Section>
-  </Fragment>
+  <ComponentsLayout>
+    <h4 className="mb-lg">Accordion</h4>
+  </ComponentsLayout>
 )
 
 export default AccordionPage

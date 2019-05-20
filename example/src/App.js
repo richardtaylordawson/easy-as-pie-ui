@@ -6,6 +6,10 @@ import MainLayout from "./layouts/MainLayout"
 // Main Page
 import Home from "./pages/index"
 
+// Position Pages
+import ColumnsPage from "./pages/components/ColumnsPage"
+import SectionPage from "./pages/components/SectionPage"
+
 // Components Pages
 import AccordionPage from "./pages/components/AccordionPage"
 import BorderContentPage from "./pages/components/BorderContentPage"
@@ -19,6 +23,10 @@ class App extends Component {
       <MainLayout>
         <Router>
           <Home path={process.env.PUBLIC_URL + '/'} />
+
+          <ColumnsPage path={process.env.PUBLIC_URL + '/components/columns'} />
+          <SectionPage path={process.env.PUBLIC_URL + '/components/section'} />
+
           <AccordionPage path={process.env.PUBLIC_URL + '/components/accordion'} />
           <BorderContentPage path={process.env.PUBLIC_URL + '/components/border-content'} />
           <ButtonsPage path={process.env.PUBLIC_URL + '/components/buttons'} />
