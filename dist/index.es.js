@@ -551,12 +551,12 @@ InputGroup.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-var _templateObject$a = taggedTemplateLiteral(["\n  position: relative;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  padding: 2px;\n  height: 60px;\n"], ["\n  position: relative;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  padding: 2px;\n  height: 60px;\n"]),
-    _templateObject2$2 = taggedTemplateLiteral(["\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  margin-left: 22.5%;\n"], ["\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  margin-left: 22.5%;\n"]);
+var _templateObject$a = taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n"], ["\n  position: fixed;\n  top: 0;\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n"]),
+    _templateObject2$2 = taggedTemplateLiteral(["\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n"], ["\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n"]);
 
-var Container$7 = styled.section(_templateObject$a);
+var Container$7 = styled.header(_templateObject$a);
 
-var Constraint = styled.nav(_templateObject2$2);
+var Constraint = styled.div(_templateObject2$2);
 
 var Navbar = function Navbar(_ref) {
   var children = _ref.children,
@@ -577,7 +577,7 @@ Navbar.propTypes = {
   color: PropTypes.string
 };
 
-var _templateObject$b = taggedTemplateLiteral(["\n  ul {\n    display: flex;\n    flex-wrap: wrap;\n    padding-left: 0;\n    margin-bottom: 0;\n    list-style: none;\n  }\n"], ["\n  ul {\n    display: flex;\n    flex-wrap: wrap;\n    padding-left: 0;\n    margin-bottom: 0;\n    list-style: none;\n  }\n"]);
+var _templateObject$b = taggedTemplateLiteral(["\n  ul {\n    display: flex;\n    flex-wrap: wrap;\n    margin-bottom: 0;\n    list-style: none;\n  }\n"], ["\n  ul {\n    display: flex;\n    flex-wrap: wrap;\n    margin-bottom: 0;\n    list-style: none;\n  }\n"]);
 
 var Container$8 = styled.nav(_templateObject$b);
 
@@ -598,16 +598,19 @@ Nav.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-var _templateObject$c = taggedTemplateLiteral(["\n  margin: auto 20px;\n  display: inline;\n  cursor: pointer;\n  color: white;\n\n  &:hover {\n    border-bottom: 1px solid white;\n  }\n\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n"], ["\n  margin: auto 20px;\n  display: inline;\n  cursor: pointer;\n  color: white;\n\n  &:hover {\n    border-bottom: 1px solid white;\n  }\n\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n"]);
+var _templateObject$c = taggedTemplateLiteral(["\n  display: inline;\n  cursor: pointer;\n  margin: 15px;\n  color: ", ";\n\n  a {\n    position: relative;\n    color: inherit;\n    text-decoration: none;\n\n    &::before {\n      content: '';\n      position: absolute;\n      left: 50%;\n      bottom: -5px;\n      width: 100%;\n      height: 2px;\n      background-color: #fff;\n      transform-origin: center;\n      transform: translate(-50%, 0) scaleX(0);\n      transition: transform 0.3s ease-in-out;\n    }\n\n    &:hover {\n      color: #fff;\n    }\n\n    &:hover::before {\n      transform: translate(-50%, 0) scaleX(1);\n    }\n  }\n"], ["\n  display: inline;\n  cursor: pointer;\n  margin: 15px;\n  color: ", ";\n\n  a {\n    position: relative;\n    color: inherit;\n    text-decoration: none;\n\n    &::before {\n      content: '';\n      position: absolute;\n      left: 50%;\n      bottom: -5px;\n      width: 100%;\n      height: 2px;\n      background-color: #fff;\n      transform-origin: center;\n      transform: translate(-50%, 0) scaleX(0);\n      transition: transform 0.3s ease-in-out;\n    }\n\n    &:hover {\n      color: #fff;\n    }\n\n    &:hover::before {\n      transform: translate(-50%, 0) scaleX(1);\n    }\n  }\n"]);
 
-var Container$9 = styled.li(_templateObject$c);
+var Container$9 = styled.li(_templateObject$c, function (props) {
+  return props.activeLink ? "#fff" : "rgba(255, 255, 255, 0.8)";
+});
 
 var NavLink = function NavLink(_ref) {
   var children = _ref.children,
+      active = _ref.active,
       href = _ref.href;
   return React.createElement(
     Container$9,
-    null,
+    { activeLink: active },
     React.createElement(
       "a",
       { href: href },
@@ -617,17 +620,44 @@ var NavLink = function NavLink(_ref) {
 };
 
 NavLink.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  active: PropTypes.bool,
+  href: PropTypes.string.isRequired
 };
 
-var _templateObject$d = taggedTemplateLiteral(["\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid lightgray;\n  font-family: SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;\n\n  th, td {\n    padding: 12px;\n    border: 1px solid lightgray;\n  }\n\n  th {\n    border-bottom: 2px solid lightgray;\n  }\n\n  tr:nth-child(odd) {background-color: #f2f2f2;}\n"], ["\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid lightgray;\n  font-family: SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;\n\n  th, td {\n    padding: 12px;\n    border: 1px solid lightgray;\n  }\n\n  th {\n    border-bottom: 2px solid lightgray;\n  }\n\n  tr:nth-child(odd) {background-color: #f2f2f2;}\n"]);
+var _templateObject$d = taggedTemplateLiteral(["\n  display: inline;\n  cursor: pointer;\n  margin: 15px;\n  color: #fff;\n\n  a {\n    text-decoration: none;\n    color: inherit;\n  }\n"], ["\n  display: inline;\n  cursor: pointer;\n  margin: 15px;\n  color: #fff;\n\n  a {\n    text-decoration: none;\n    color: inherit;\n  }\n"]);
 
-var Container$a = styled.table(_templateObject$d);
+var Container$a = styled.div(_templateObject$d);
+
+var NavText = function NavText(_ref) {
+  var children = _ref.children,
+      href = _ref.href,
+      target = _ref.target;
+  return React.createElement(
+    Container$a,
+    null,
+    href ? React.createElement(
+      "a",
+      { href: href, target: target ? target : "" },
+      children
+    ) : { children: children }
+  );
+};
+
+NavText.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string,
+  target: PropTypes.string
+};
+
+var _templateObject$e = taggedTemplateLiteral(["\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid lightgray;\n  font-family: SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;\n\n  th, td {\n    padding: 12px;\n    border: 1px solid lightgray;\n  }\n\n  th {\n    border-bottom: 2px solid lightgray;\n  }\n\n  tr:nth-child(odd) {background-color: #f2f2f2;}\n"], ["\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid lightgray;\n  font-family: SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;\n\n  th, td {\n    padding: 12px;\n    border: 1px solid lightgray;\n  }\n\n  th {\n    border-bottom: 2px solid lightgray;\n  }\n\n  tr:nth-child(odd) {background-color: #f2f2f2;}\n"]);
+
+var Container$b = styled.table(_templateObject$e);
 
 var Table = function Table(_ref) {
   var children = _ref.children;
   return React.createElement(
-    Container$a,
+    Container$b,
     null,
     children
   );
@@ -639,5 +669,5 @@ Table.propTypes = {
 
 // Global Theme && Breakpoints
 
-export { Breakpoints_1 as Breakpoints, Colors_1 as ReactCuttlefishColors, ReactCuttlefishTheme, Columns, Section, Accordion, BorderContent, Button, Card, CardContent, CardHeader, Input, InputGroup, Navbar, Nav, NavLink, Table };
+export { Breakpoints_1 as Breakpoints, Colors_1 as ReactCuttlefishColors, ReactCuttlefishTheme, Columns, Section, Accordion, BorderContent, Button, Card, CardContent, CardHeader, Input, InputGroup, Navbar, Nav, NavLink, NavText, Table };
 //# sourceMappingURL=index.es.js.map

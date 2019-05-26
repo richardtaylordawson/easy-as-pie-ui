@@ -6,6 +6,9 @@ import MainLayout from "./layouts/MainLayout"
 // Main Page
 import Home from "./pages/Index"
 
+// Getting Started Page
+import GettingStarted from "./pages/GettingStarted"
+
 // Position Pages
 import ColumnsPage from "./pages/components/ColumnsPage"
 import SectionPage from "./pages/components/SectionPage"
@@ -24,6 +27,8 @@ class App extends Component {
       <MainLayout>
         <Router>
           <Home path={process.env.PUBLIC_URL + '/'} />
+
+          <GettingStarted path={process.env.PUBLIC_URL + '/getting-started'} />
 
           <ColumnsPage path={process.env.PUBLIC_URL + '/components/columns'} />
           <SectionPage path={process.env.PUBLIC_URL + '/components/section'} />

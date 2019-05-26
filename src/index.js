@@ -19,6 +19,7 @@ import InputGroup from "./components/ui/InputGroup"
 import Navbar from "./components/ui/Navbar"
 import Nav from "./components/ui/Nav"
 import NavLink from "./components/ui/NavLink"
+import NavText from "./components/ui/NavText"
 import Table from "./components/ui/Table"
 
 export {
@@ -38,5 +39,6 @@ export {
   Navbar,
   Nav,
   NavLink,
+  NavText,
   Table
 }

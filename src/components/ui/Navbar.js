@@ -2,22 +2,21 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const Container = styled.section`
-  position: relative;
+const Container = styled.header`
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2px;
-  height: 60px;
 `
 
-const Constraint = styled.nav`
+const Constraint = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-left: 22.5%;
 `
 
 const Navbar = ({children, color}) => (

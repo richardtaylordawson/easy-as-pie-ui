@@ -4,23 +4,26 @@ import {
   Button
 } from "react-cuttlefish"
 
+
+import ReactIcon from "./../images/react-icon.svg"
+
 const Home  = () => (
   <Section>
-    <div className="center-block text-center mb-xl">
-      <h1 className="mb-sm text-red">reactCuttleFish</h1>
+    <div className="center-block text-center mb-xl mt-xl">
+      <h1 className="mb-sm text-blue">reactCuttleFish</h1>
       <h6 className="mb-md">Collection of generic components <br/>that can be used to easily build a website.</h6>
-      <Button color="red-outline" href="https://github.com/richardtaylordawson/react-cuttlefish" target="_blank">Github</Button>
-      <Button color="red" href="/components/buttons">Components</Button>
+      <Button color="blue-outline" href="https://github.com/richardtaylordawson/react-cuttlefish" target="_blank">Github</Button>
+      <Button color="blue" href="/components/buttons">Components</Button>
     </div>
     <div className="content-sm center-block mb-xl">
-      <h4 className="text-blue">Installation</h4>
+      <h4 className="text-red">Installation</h4>
       <hr/>
       <h5 className="mt-md">NPM</h5>
       <p>Install reactCuttleFish and peer dependencies via NPM</p>
       <code><span className="text-yellow">npm install</span> --save react-cuttlefish</code>
     </div>
     <div className="content-sm center-block">
-      <h4 className="text-blue">About the Project</h4>
+      <h4 className="text-red">About the Project</h4>
       <hr/>
       <h5 className="mt-md">Intro</h5>
       <p>reactCuttleFish was built with ease in mind to help anyone get started quick and easily with any site. This library contains many UI and positioning components that are friendly and easy to use.</p>
