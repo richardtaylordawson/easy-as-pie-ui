@@ -9,7 +9,6 @@ const Container = styled.div`
 `
 
 const BorderContent = ({children, sides, color, size}) => {
-
   const borderSize = size ? `${size}px` : "2px"
   let border;
 
@@ -26,7 +25,7 @@ const BorderContent = ({children, sides, color, size}) => {
   }
 
   return (
-    <Container className={`${color ? `bc-${color}` : `bc-primary`}`} border={border}>
+    <Container className={`${color ? `bc-${color}` : `bc-blue`}`} border={border}>
       {children}
     </Container>
   )
@@ -34,9 +33,9 @@ const BorderContent = ({children, sides, color, size}) => {
 
 BorderContent.propTypes = {
   children: PropTypes.node.isRequired,
-  borderSides: PropTypes.string,
-  borderColor: PropTypes.string,
-  borderSize: PropTypes.string
+  sides: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.string
 }
 
 export default BorderContent

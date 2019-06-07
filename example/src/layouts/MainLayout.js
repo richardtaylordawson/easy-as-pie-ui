@@ -27,7 +27,7 @@ const MainLayout = ({ children }) => {
       <Navbar color="blue">
         <NavText href="/">
           <NavLogo>
-            <img src={ReactIcon}/>
+            <img src={ReactIcon} alt="Logo" />
             <h4 className="mb-xs inline">reactCuttleFish</h4>
           </NavLogo>
         </NavText>

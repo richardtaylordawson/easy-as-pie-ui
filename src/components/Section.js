@@ -5,14 +5,11 @@ import styled from "@emotion/styled"
 const Container = styled.section`
   padding-left: 15px;
   padding-right: 15px;
-  background-image: url(${props => props.image && props.image});
-  background-size: cover;
-  background-position: ${props => props.imagePosition && props.imagePosition};
+  ${props => props.image && `background-image: url(${props.image}); background-size: cover;`}
+  ${props => props.image ? props.imagePosition ? `background-position: ${props.imagePosition};` : "background-position: center;" : ""}
 `
 
 const Section = ({children, color, image, imagePosition, padding = "", notch = ""}) => {
-
-  // TODO change so that it works like TRBL css
   padding = padding.split(" ")
   padding = padding.length > 1
     ? `pt-${padding[0]} pb-${padding[1]}`
@@ -33,7 +30,7 @@ const Section = ({children, color, image, imagePosition, padding = "", notch = "
 }
 
 Section.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   color: PropTypes.string,
   image: PropTypes.string,
   imagePosition: PropTypes.string,

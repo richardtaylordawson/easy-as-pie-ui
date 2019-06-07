@@ -33,6 +33,7 @@ const Header = styled.div`
 
 const Content = styled.div`
   padding: 30px 55px;
+  background-color: #eee;
 `
 
 class Accordion extends Component {
@@ -49,11 +50,11 @@ class Accordion extends Component {
 
   render () {
     return (
-      <Container className={`bg-muted ${this.state.open && "open"}`}>
-        <Header className={`accordion-header ${this.props.color ? `bg-${this.props.color} text-white` : `bg-primary text-white`}`} onClick={this.toggle.bind(this)}>
+      <Container className={`bg-grey ${this.state.open && "open"}`}>
+        <Header className={`accordion-header ${this.props.color ? `bg-${this.props.color} text-white` : `bg-blue text-white`}`} onClick={this.toggle.bind(this)}>
           {this.props.children[0]}
         </Header>
-        <Content className="bg-light accordion-content">
+        <Content className="accordion-content">
           {this.props.children[1]}
         </Content>
       </Container>

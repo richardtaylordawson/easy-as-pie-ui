@@ -16,7 +16,7 @@ import SectionPage from "./pages/components/SectionPage"
 // Components Pages
 import AccordionPage from "./pages/components/AccordionPage"
 import BorderContentPage from "./pages/components/BorderContentPage"
-import ButtonsPage from "./pages/components/ButtonsPage"
+import ButtonPage from "./pages/components/ButtonPage"
 import CardPage from "./pages/components/CardPage"
 import InputPage from "./pages/components/InputPage"
 import NavbarPage from "./pages/components/NavbarPage"
@@ -35,7 +35,7 @@ class App extends Component {
 
           <AccordionPage path={process.env.PUBLIC_URL + '/components/accordion'} />
           <BorderContentPage path={process.env.PUBLIC_URL + '/components/border-content'} />
-          <ButtonsPage path={process.env.PUBLIC_URL + '/components/buttons'} />
+          <ButtonPage path={process.env.PUBLIC_URL + '/components/button'} />
           <CardPage path={process.env.PUBLIC_URL + '/components/card'} />
           <InputPage path={process.env.PUBLIC_URL + '/components/input'} />
           <NavbarPage path={process.env.PUBLIC_URL + '/components/navbar'} />

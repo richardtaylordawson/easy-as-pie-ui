@@ -1,11 +1,5 @@
 import React from "react"
-import {
-  Section,
-  Button
-} from "react-cuttlefish"
-
-
-import ReactIcon from "./../images/react-icon.svg"
+import { Section, Button } from "react-cuttlefish"
 
 const Home  = () => (
   <Section>
@@ -13,7 +7,7 @@ const Home  = () => (
       <h1 className="mb-sm text-blue">reactCuttleFish</h1>
       <h6 className="mb-md">Collection of generic components <br/>that can be used to easily build a website.</h6>
       <Button color="blue-outline" href="https://github.com/richardtaylordawson/react-cuttlefish" target="_blank">Github</Button>
-      <Button color="blue" href="/components/buttons">Components</Button>
+      <Button color="blue" href="/components/button">Components</Button>
     </div>
     <div className="content-sm center-block mb-xl">
       <h4 className="text-red">Installation</h4>

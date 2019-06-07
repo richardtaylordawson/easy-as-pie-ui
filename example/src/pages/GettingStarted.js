@@ -1,8 +1,5 @@
 import React from "react"
-import {
-  Section,
-  Button
-} from "react-cuttlefish"
+import { Section } from "react-cuttlefish"
 
 const GettingStarted  = () => (
   <Section>

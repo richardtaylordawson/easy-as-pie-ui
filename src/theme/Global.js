@@ -360,6 +360,13 @@ const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
         .text-left { text-align: left; }
         .text-right { text-align: right; }
 
+        /* Text Sizing */
+        .text-small { font-size: 10px; }
+
+        /* Font Styling */
+        .bold { font-style: bold; }
+        .italic { font-style: italic; }
+
         ${Breakpoints["small-up"]} {
           .text-sm-center { text-align: center; }
           .text-sm-left { text-align: left; }
@@ -510,6 +517,8 @@ const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
           `
         })}
 
+        .text-white { color: #fff; }
+
         .stronger {
           font-weight: 800;
         }
@@ -538,6 +547,16 @@ const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
         .pb-md { padding-bottom: ${Spacing.md}; }
         .pb-lg { padding-bottom: ${Spacing.lg}; }
         .pb-xl { padding-bottom: ${Spacing.xl}; }
+        .pr-xs { padding-right: ${Spacing.xs}; }
+        .pr-sm { padding-right: ${Spacing.sm}; }
+        .pr-md { padding-right: ${Spacing.md}; }
+        .pr-lg { padding-right: ${Spacing.lg}; }
+        .pr-xl { padding-right: ${Spacing.xl}; }
+        .pl-xs { padding-left: ${Spacing.xs}; }
+        .pl-sm { padding-left: ${Spacing.sm}; }
+        .pl-md { padding-left: ${Spacing.md}; }
+        .pl-lg { padding-left: ${Spacing.lg}; }
+        .pl-xl { padding-left: ${Spacing.xl}; }
         .pt-xs { padding-top: ${Spacing.xs}; }
         .pt-sm { padding-top: ${Spacing.sm}; }
         .pt-md { padding-top: ${Spacing.md}; }
@@ -550,6 +569,16 @@ const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
         .mb-md { margin-bottom: ${Spacing.md}; }
         .mb-lg { margin-bottom: ${Spacing.lg}; }
         .mb-xl { margin-bottom: ${Spacing.xl}; }
+        .mr-xs { margin-right: ${Spacing.xs}; }
+        .mr-sm { margin-right: ${Spacing.sm}; }
+        .mr-md { margin-right: ${Spacing.md}; }
+        .mr-lg { margin-right: ${Spacing.lg}; }
+        .mr-xl { margin-right: ${Spacing.xl}; }
+        .ml-xs { margin-left: ${Spacing.xs}; }
+        .ml-sm { margin-left: ${Spacing.sm}; }
+        .ml-md { margin-left: ${Spacing.md}; }
+        .ml-lg { margin-left: ${Spacing.lg}; }
+        .ml-xl { margin-left: ${Spacing.xl}; }
         .mt-xs { margin-top: ${Spacing.xs}; }
         .mt-sm { margin-top: ${Spacing.sm}; }
         .mt-md { margin-top: ${Spacing.md}; }

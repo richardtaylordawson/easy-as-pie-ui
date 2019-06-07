@@ -15,9 +15,10 @@ const Container = styled.table`
 
   th {
     border-bottom: 2px solid lightgray;
+    background-color: #fff;
   }
 
-  tr:nth-child(odd) {background-color: #f2f2f2;}
+  tr:nth-of-type(odd) {background-color: #f2f2f2;}
 `
 
 const Table = ({children}) => (

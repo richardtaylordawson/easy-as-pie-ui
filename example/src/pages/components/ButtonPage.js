@@ -3,15 +3,16 @@ import { BorderContent, ReactCuttlefishColors, Button, Table } from "react-cuttl
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
-const ButtonsPage = () => (
+const ButtonPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
-      <h3>Buttons</h3>
+      <h3>Button</h3>
       <p>Custom button styles for use in forms, pages, CTA's etc. They support multiple colors, states, and more.</p>
     </div>
     <div className="mb-md">
-    <h4 className="mb-sm">Regular</h4>
-      <BorderContent sides={"true true false true"} color="light-grey" size="3" radius="5">
+      <h4 className="mb-sm">Regular</h4>
+      <p className="text-small italic">Simple button used for anything you'd like.</p>
+      <BorderContent sides="true true false true" color="light-grey" size="1" radius="5">
         <p className="text-grey">EXAMPLE</p>
         {
           Object.keys(ReactCuttlefishColors).map((key, index) => {
@@ -19,11 +20,14 @@ const ButtonsPage = () => (
           })
         }
       </BorderContent>
-      <code><span className="text-yellow">import</span> Button <span className="text-warning">from</span> "react-cuttlefish"</code>
+      <code>
+        &#60;Button color="red"&#62;red&#60;/Button&#62;
+      </code>
     </div>
     <div className="mb-md">
       <h4 className="mb-sm">Outline</h4>
-      <BorderContent sides={"true true false true"} color="light-grey" size="3" radius="5">
+      <p className="text-small italic">Change the button fill to transparent with the outline colored instead.</p>
+      <BorderContent sides="true true false true" color="light-grey" size="1" radius="5">
         <p className="text-grey">EXAMPLE</p>
         {
           Object.keys(ReactCuttlefishColors).map((key, index) => {
@@ -31,42 +35,45 @@ const ButtonsPage = () => (
           })
         }
       </BorderContent>
-      <code><span className="text-yellow">import</span> Button <span className="text-warning">from</span> "react-cuttlefish"</code>
+      <code>
+        &#60;Button color="red-outline"&#62;red&#60;/Button&#62;
+      </code>
     </div>
     <div className="mb-md">
       <h4>API</h4>
-      <p>import button from stuff</p>
       <Table>
         <thead>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
             <td>children</td>
             <td>node</td>
             <td></td>
-            <td></td>
+            <td>Text displayed in the button.</td>
           </tr>
           <tr>
             <td>color</td>
             <td>string</td>
             <td></td>
-            <td></td>
+            <td>Theme color that will change the color of the button. Pass the color with "-outline" to style the button with an outline instead of a background color.</td>
           </tr>
           <tr>
             <td>href</td>
             <td>string</td>
             <td></td>
-            <td>Passing in an href automatically creates the button as an a tag and will link to whatever reference is passed in.</td>
+            <td>Passing in an href automatically creates the button as an a tag and will link to whatever reference is passed in. Example: href="/link/to-page"</td>
           </tr>
           <tr>
             <td>target</td>
             <td>string</td>
             <td></td>
-            <td></td>
+            <td>Must pass in the href attribute in order for the target to take affect. Changes the anchor tag's target created from the href attribute.</td>
           </tr>
         </tbody>
       </Table>
@@ -74,5 +81,5 @@ const ButtonsPage = () => (
   </ComponentsLayout>
 )
 
-export default ButtonsPage
+export default ButtonPage
 

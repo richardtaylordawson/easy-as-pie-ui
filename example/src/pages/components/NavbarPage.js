@@ -10,7 +10,7 @@ const NavbarPage = () => (
       <p>Easy to use navbar for quick and easy site navigation that looks good.</p>
     </div>
     <div className="mb-md">
-      <BorderContent sides={"true true false true"} color="light-grey" size="3" radius="5">
+      <BorderContent sides="true true false true" color="light-grey" size="3" radius="5">
         <p className="text-grey">EXAMPLE</p>
         <Navbar>
           <Nav>
@@ -24,7 +24,7 @@ const NavbarPage = () => (
     </div>
     <div className="mb-md">
       <h4 className="mb-sm">Colors</h4>
-      <BorderContent sides={"true true false true"} color="light-grey" size="3" radius="5">
+      <BorderContent sides="true true false true" color="light-grey" size="3" radius="5">
         <p className="text-grey">EXAMPLE</p>
         <div className="mb-sm">
           <Navbar color="black">
@@ -58,13 +58,14 @@ const NavbarPage = () => (
     </div>
     <div className="mb-md">
       <h4>API</h4>
-      <p>import button from stuff</p>
       <Table>
         <thead>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
