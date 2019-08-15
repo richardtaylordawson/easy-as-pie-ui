@@ -1,24 +1,20 @@
-<p align="center">
-  <a href="">
-    <img src="https://us.123rf.com/450wm/mozgostudia/mozgostudia1601/mozgostudia160101349/51352821-striped-cuttlefish-ink-watercolor-drawing-hand-drawn-edible-marine-mollusk-with-tentacles.jpg?ver=6" alt="Cuttlefish" width=72 height=72>
-  </a>
+# Easy as Pie - UI
+> Easy as pie component library built in React that can easily be themed and implemented on any site.
 
-  <h3 align="center">React Cuttlefish</h3>
+## Credits
+Several projects aided in inspiring this project. Notably they are:
 
-  <p align="center">
-    Collection of generic components that can be used to easily build a website.
-  </p>
-</p>
+- [React](https://reactjs.org/)
+- [Create React Library](https://www.npmjs.com/package/create-react-library)
+- [NPM](https://www.npmjs.com/)
 
-## Status
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/commits/master)
-[![GitHub Search Hit Counter](https://img.shields.io/github/search/richardtaylordawson/react-cuttlefish/goto.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0bb94643f7a9421ca1febfa354c5d030)](https://www.codacy.com/app/richardtaylordawson/react-cuttlefish?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=richardtaylordawson/react-cuttlefish&amp;utm_campaign=Badge_Grade)
-[![NPM Downloads](https://img.shields.io/npm/dw/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![GitHub Repo Size in Size](https://img.shields.io/github/repo-size/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![GitHub Code Size in Size](https://img.shields.io/github/languages/code-size/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![GitHub Top Language](https://img.shields.io/github/languages/top/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/richardtaylordawson/react-cuttlefish.svg)](https://github.com/richardtaylordawson/react-cuttlefish/)
+## Run Project
+```shell
+$ Coming Soon
+```
+
+## Deployment
+Still in development
 
 ## View Project
-Not available yet
+Still in development
