@@ -3,6 +3,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
+export const CardContent = ({children}) => (
+  <Container>{children}</Container>
+)
+
 const Container = styled.div`
   text-align: center;
   padding: 45px;
@@ -10,12 +14,6 @@ const Container = styled.div`
   border-bottom-left-radius: 10px;
 `
 
-const CardContent = ({children}) => (
-  <Container>{children}</Container>
-)
-
 CardContent.propTypes = {
   children: PropTypes.node.isRequired
 }
-
-export default CardContent

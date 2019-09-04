@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, Section, Table } from "react-cuttlefish"
+import { BorderContent, Section, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -17,9 +17,9 @@ const SectionPage = () => (
         <Section color="olive"></Section>
       </BorderContent>
       <code>
-        &#60;Section color="olive"&#62;
+        <span class="text-yellow">&#60;Section <span class="text-pink">color="olive"</span>&#62;</span>
           <div className="pl-md">Content Goes Here </div>
-        &#60;/Section&#62;
+        <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -30,9 +30,9 @@ const SectionPage = () => (
         <Section color="orange" notch="top orange"></Section>
       </BorderContent>
       <code>
-        &#60;Section color="orange" notch="top orange"&#62;
+        <span class="text-yellow">&#60;Section <span class="text-pink">color="orange" notch="top orange"</span>&#62;</span>
           <div className="pl-md">Content Goes Here </div>
-        &#60;/Section&#62;
+        <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -43,9 +43,9 @@ const SectionPage = () => (
         <Section image="https://i.pinimg.com/originals/32/7e/f9/327ef97d75ab564e6d57bf49be59d681.jpg"></Section>
       </BorderContent>
       <code>
-        &#60;Section image="PATH_TO_IMAGE"&#62;
+        <span class="text-yellow">&#60;Section <span class="text-pink">image="PATH_TO_IMAGE"</span>&#62;</span>
           <div className="pl-md">Content Goes Here </div>
-          &#60;/Section&#62;
+        <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
     <div className="mb-md">

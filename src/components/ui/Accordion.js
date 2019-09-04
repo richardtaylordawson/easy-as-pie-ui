@@ -2,6 +2,32 @@ import React, { Component } from "react"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 
+export class Accordion extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { open: false }
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      open: !prevState.open
+    }))
+  }
+
+  render () {
+    return (
+      <Container className={`bg-grey ${this.state.open && "open"}`}>
+        <Header className={`accordion-header ${this.props.color ? `bg-${this.props.color} text-white` : `bg-blue text-white`}`} onClick={this.toggle.bind(this)}>
+          {this.props.children[0]}
+        </Header>
+        <Content className="accordion-content">
+          {this.props.children[1]}
+        </Content>
+      </Container>
+    )
+  }
+}
+
 const Container = styled.div`
   max-width: 658px;
   margin: 20px auto;
@@ -36,34 +62,6 @@ const Content = styled.div`
   background-color: #eee;
 `
 
-class Accordion extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { open: false }
-  }
-
-  toggle() {
-    this.setState(prevState => ({
-      open: !prevState.open
-    }))
-  }
-
-  render () {
-    return (
-      <Container className={`bg-grey ${this.state.open && "open"}`}>
-        <Header className={`accordion-header ${this.props.color ? `bg-${this.props.color} text-white` : `bg-blue text-white`}`} onClick={this.toggle.bind(this)}>
-          {this.props.children[0]}
-        </Header>
-        <Content className="accordion-content">
-          {this.props.children[1]}
-        </Content>
-      </Container>
-    )
-  }
-}
-
 Accordion.propTypes = {
   children: PropTypes.node.isRequired
 }
-
-export default Accordion

@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, ReactCuttlefishColors, Button, Table } from "react-cuttlefish"
+import { BorderContent, Colors, Button, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -15,13 +15,13 @@ const ButtonPage = () => (
       <BorderContent sides="true true false true" color="light-grey" size="1" radius="5">
         <p className="text-grey">EXAMPLE</p>
         {
-          Object.keys(ReactCuttlefishColors).map((key, index) => {
+          Object.keys(Colors).map((key, index) => {
             return <Button color={key} key={index}>{key}</Button>
           })
         }
       </BorderContent>
       <code>
-        &#60;Button color="red"&#62;red&#60;/Button&#62;
+        <span class="text-yellow">&#60;Button <span class="text-pink">color="red"</span>&#62;<span class="text-white">red</span>&#60;/Button&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -30,13 +30,13 @@ const ButtonPage = () => (
       <BorderContent sides="true true false true" color="light-grey" size="1" radius="5">
         <p className="text-grey">EXAMPLE</p>
         {
-          Object.keys(ReactCuttlefishColors).map((key, index) => {
+          Object.keys(Colors).map((key, index) => {
             return <Button color={`${key}-outline`} key={index}>{key}</Button>
           })
         }
       </BorderContent>
       <code>
-        &#60;Button color="red-outline"&#62;red&#60;/Button&#62;
+        <span class="text-yellow">&#60;Button <span class="text-pink">color="red-outline"</span>&#62;<span class="text-white">red outline</span>&#60;/Button&#62;</span>
       </code>
     </div>
     <div className="mb-md">

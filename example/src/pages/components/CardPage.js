@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, Columns, Table, Card, CardContent, CardHeader } from "react-cuttlefish"
+import { BorderContent, Columns, Table, Card, CardContent, CardHeader } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -23,14 +23,14 @@ const CardPage = () => (
         </Card>
       </BorderContent>
       <code>
-        &#60;Card&#62;
-          <div className="pl-md">&#60;CardHeader&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;Default Card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardHeader&#62;</div>
-          <div className="pl-md">&#60;CardContent&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;This is the content of the card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardContent&#62;</div>
-        &#60;/Card&#62;
+        <span class="text-yellow">&#60;Card&#62;</span>
+          <div className="pl-md text-yellow">&#60;CardHeader</div>
+            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
+          <div className="pl-md text-yellow">&#60;/CardHeader&#62;</div>
+          <div className="pl-md text-yellow">&#60;CardContent&#62;</div>
+            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
+          <div className="pl-md text-yellow">&#60;/CardContent&#62;</div>
+        <span class="text-yellow">&#60;/Card&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -38,42 +38,24 @@ const CardPage = () => (
       <p className="text-small italic">Change the color of the card by passing a theme color to the CardHeader.</p>
       <BorderContent sides="true true false true" color="light-grey" size="1" radius="5">
         <p className="text-grey">EXAMPLE</p>
-        <Columns>
-          <Card>
-            <CardHeader color="orange">
-              <h5>Default Card</h5>
-            </CardHeader>
-            <CardContent>
-              <p>This is the content of the card</p>
-            </CardContent>
-          </Card>
-          <Card>
-          <CardHeader color="red">
+        <Card>
+          <CardHeader color="orange">
             <h5>Default Card</h5>
           </CardHeader>
           <CardContent>
             <p>This is the content of the card</p>
           </CardContent>
         </Card>
-        </Columns>
       </BorderContent>
       <code>
-        &#60;Card&#62;
-          <div className="pl-md">&#60;CardHeader color="orange"&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;Default Card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardHeader&#62;</div>
-          <div className="pl-md">&#60;CardContent&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;This is the content of the card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardContent&#62;</div>
-        &#60;/Card&#62;
-        &#60;Card&#62;
-          <div className="pl-md">&#60;CardHeader color="red"&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;Default Card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardHeader&#62;</div>
-          <div className="pl-md">&#60;CardContent&#62;</div>
-            <div className="pl-xl">&#60;h5&#62;This is the content of the card&#60;h5&#62;</div>
-          <div className="pl-md">&#60;/CardContent&#62;</div>
-        &#60;/Card&#62;
+        <span class="text-yellow">&#60;Card&#62;</span>
+          <div className="pl-md text-yellow">&#60;CardHeader <span class="text-pink">color="orange"</span>&#62;</div>
+            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
+          <div className="pl-md text-yellow">&#60;/CardHeader&#62;</div>
+          <div className="pl-md text-yellow">&#60;CardContent&#62;</div>
+            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
+          <div className="pl-md text-yellow">&#60;/CardContent&#62;</div>
+        <span class="text-yellow">&#60;/Card&#62;</span>
       </code>
     </div>
     <div className="mb-md">

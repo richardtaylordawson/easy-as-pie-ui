@@ -1,5 +1,5 @@
 # Easy as Pie - UI
-> Easy as pie component library built in React that can easily be themed and implemented on any site.
+> React component library that is easy as pie to theme and implement on any site.
 
 ## Credits
 Several projects aided in inspiring this project. Notably they are:
@@ -14,7 +14,7 @@ $ Coming Soon
 ```
 
 ## Deployment
-Still in development
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e86df053-112b-4db3-b110-bb9036408bc5/deploy-status)](https://app.netlify.com/sites/rtd-easy-as-pie-ui/deploys)
 
 ## View Project
 Still in development

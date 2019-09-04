@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, Columns, Table } from "react-cuttlefish"
+import { BorderContent, Columns, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -7,7 +7,7 @@ const BorderContentPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Border Content</h3>
-      <p>Create nice sectioned content with borders to separate the content.</p>
+      <p>Create nice sectioned content with borders to separate the it.</p>
     </div>
     <div className="mb-md">
     <h4 className="mb-sm">Regular</h4>
@@ -19,10 +19,10 @@ const BorderContentPage = () => (
         </BorderContent>
       </BorderContent>
       <code>
-        &#60;BorderContent&#62;
-          <div className="pl-md">&#60;h2&#62;Border Content&#60;/h2&#62;</div>
-          <div className="pl-md">&#60;p&#62;Look at the pretty border content&#60;/p&#62;</div>
-        &#60;/BorderContent&#62;
+        <span class="text-yellow">&#60;BorderContent&#62;</span>
+          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Border Content</span>&#60;/h2&#62;</div>
+          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+        <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -42,16 +42,16 @@ const BorderContentPage = () => (
         </Columns>
       </BorderContent>
       <code>
-        &#60;Columns&#62;
-          <div className="pl-md">&#60;BorderContent sides="true true true true"&#62;</div>
-            <div className="pl-xl">&#60;h2&#62;Sides&#60;/h2&#62;</div>
-            <div className="pl-xl">&#60;p&#62;Look at the pretty border content&#60;/p&#62;</div>
-          <div className="pl-md">&#60;/BorderContent&#62;</div>
-          <div className="pl-md">&#60;BorderContent sides="true false false false"&#62;</div>
-            <div className="pl-xl">&#60;h2&#62;Sides&#60;/h2&#62;</div>
-            <div className="pl-xl">&#60;p&#62;Look at the pretty border content&#60;/p&#62;</div>
-          <div className="pl-md">&#60;/BorderContent&#62;</div>
-        &#60;/Columns&#62;
+        <span class="text-yellow">&#60;Columns&#62;</span>
+          <div className="pl-md text-yellow">&#60;BorderContent <span class="text-pink">sides="true true true true"</span>&#62;</div>
+            <div className="pl-xl text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
+            <div className="pl-xl text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-md text-yellow">&#60;/BorderContent&#62;</div>
+          <div className="pl-md text-yellow">&#60;BorderContent <span class="text-pink">sides="true false false false"</span>&#62;</div>
+            <div className="pl-xl text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
+            <div className="pl-xl text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-md text-yellow">&#60;/BorderContent&#62;</div>
+        <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -65,10 +65,10 @@ const BorderContentPage = () => (
         </BorderContent>
       </BorderContent>
       <code>
-        &#60;BorderContent color="red"&#62;
-          <div className="pl-md">&#60;h2&#62;Color&#60;/h2&#62;</div>
-          <div className="pl-md">&#60;p&#62;Look at the pretty border content&#60;/p&#62;</div>
-        &#60;/BorderContent&#62;
+        <span class="text-yellow">&#60;BorderContent <span class="text-pink">color="red"</span>&#62;</span>
+          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Color</span>&#60;/h2&#62;</div>
+          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+        <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -82,10 +82,10 @@ const BorderContentPage = () => (
         </BorderContent>
       </BorderContent>
       <code>
-        &#60;BorderContent size="5" color="orange" sides="true false false true"&#62;
-          <div className="pl-md">&#60;h2&#62;Size&#60;/h2&#62;</div>
-          <div className="pl-md">&#60;p&#62;Look at the pretty border content&#60;/p&#62;</div>
-        &#60;/BorderContent&#62;
+        <span class="text-yellow">&#60;BorderContent <span class="text-pink">size="5" color="orange" sides="true false false true"</span>&#62;</span>
+          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Size</span>&#60;/h2&#62;</div>
+          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+        <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
     <div className="mb-md">

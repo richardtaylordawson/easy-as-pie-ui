@@ -2,6 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
+export const InputGroup = ({children}) => (
+  <Container>
+    {children}
+  </Container>
+)
+
 const Container = styled.div`
   position: relative;
   display: inline-flex;
@@ -27,14 +33,6 @@ const Container = styled.div`
   }
 `
 
-const InputGroup = ({children}) => (
-  <Container>
-    {children}
-  </Container>
-)
-
 InputGroup.propTypes = {
   children: PropTypes.node.isRequired
 }
-
-export default InputGroup

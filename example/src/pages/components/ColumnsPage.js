@@ -1,5 +1,5 @@
 import React from "react"
-import { Columns, BorderContent, Table } from "react-cuttlefish"
+import { Columns, BorderContent, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -21,11 +21,11 @@ const ColumnsPage = () => (
         </Columns>
       </BorderContent>
       <code>
-        &#60;Columns&#62;
-          <div className="pl-md">&#60;div&#62;Column 1&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 2&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 3&#60;/div&#62;</div>
-        &#60;/Columns&#62;
+        <span class="text-yellow">&#60;Columns&#62;</span>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+        <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -40,11 +40,11 @@ const ColumnsPage = () => (
         </Columns>
       </BorderContent>
       <code>
-        &#60;Columns split=&#123;&#91;25, 50, 35&#93;&#125;&#62;
-          <div className="pl-md">&#60;div&#62;Column 1&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 2&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 3&#60;/div&#62;</div>
-        &#60;/Columns&#62;
+        <span class="text-yellow">&#60;Columns <span class="text-pink">split=&#123;&#91;25, 50, 35&#93;&#125;</span>&#62;</span>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+        <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
     <div className="mb-md">
@@ -59,11 +59,11 @@ const ColumnsPage = () => (
         </Columns>
       </BorderContent>
       <code>
-        &#60;Columns split=&#123;&#91;25, 50, 35&#93;&#125; collapseMargin&#62;
-          <div className="pl-md">&#60;div&#62;Column 1&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 2&#60;/div&#62;</div>
-          <div className="pl-md">&#60;div&#62;Column 3&#60;/div&#62;</div>
-        &#60;/Columns&#62;
+        <span class="text-yellow">&#60;Columns <span class="text-pink">split=&#123;&#91;25, 50, 35&#93;&#125; collapseMargin=&#123;true&#125;</span>&#62;</span>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+        <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
     <div className="mb-md">

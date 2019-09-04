@@ -1,12 +1,12 @@
-const Breakpoints = {
-  "small": [0, 640],
+export const Breakpoints = {
+  "small": [0, 576],
   "small-up": [0],
-  "small-down": [640],
-  "medium": [641, 1024],
-  "medium-up": [641],
-  "medium-down": [1024],
-  "large": [1025, 1440],
-  "large-up": [1025]
+  "small-down": [576],
+  "medium": [768, 992],
+  "medium-up": [768],
+  "medium-down": [991],
+  "large": [992, 1200],
+  "large-up": [992]
 }
 
 Object.keys(Breakpoints).map(key => {
@@ -16,5 +16,3 @@ Object.keys(Breakpoints).map(key => {
     : `@media screen and (max-width: ${Breakpoints[key][0]}px)`
     : `@media screen and (min-width: ${Breakpoints[key][0]}px) and (max-width: ${Breakpoints[key][1]}px)`
 })
-
-module.exports = Breakpoints

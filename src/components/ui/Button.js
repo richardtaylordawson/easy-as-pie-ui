@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Button = ({children, color = "", href = "", target=""}) => {
+export const Button = ({children, color = "", href = "", target=""}) => {
   const buttonClasses = `btn btn-${color}`
 
   return (href)
@@ -15,5 +15,3 @@ Button.propTypes = {
   href: PropTypes.string,
   target: PropTypes.string
 }
-
-export default Button

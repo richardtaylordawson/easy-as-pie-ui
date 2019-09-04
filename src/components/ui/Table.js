@@ -21,7 +21,7 @@ const Container = styled.table`
   tr:nth-of-type(odd) {background-color: #f2f2f2;}
 `
 
-const Table = ({children}) => (
+export const Table = ({children}) => (
   <Container>
     {children}
   </Container>
@@ -30,5 +30,3 @@ const Table = ({children}) => (
 Table.propTypes = {
   children: PropTypes.node.isRequired
 }
-
-export default Table

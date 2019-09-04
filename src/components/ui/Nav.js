@@ -11,7 +11,7 @@ const Container = styled.nav`
   }
 `
 
-const Nav = ({children}) => (
+export const Nav = ({children}) => (
   <Container>
     <ul>{children}</ul>
   </Container>
@@ -20,5 +20,3 @@ const Nav = ({children}) => (
 Nav.propTypes = {
   children: PropTypes.node.isRequired
 }
-
-export default Nav

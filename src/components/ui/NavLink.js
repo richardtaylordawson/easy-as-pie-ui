@@ -36,7 +36,7 @@ const Container = styled.li`
   }
 `
 
-const NavLink = ({children, active, href}) => (
+export const NavLink = ({children, active, href}) => (
   <Container activeLink={active}>
     <a href={href}>{children}</a>
   </Container>
@@ -47,5 +47,3 @@ NavLink.propTypes = {
   active: PropTypes.bool,
   href: PropTypes.string.isRequired
 }
-
-export default NavLink

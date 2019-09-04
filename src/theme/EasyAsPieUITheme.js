@@ -2,13 +2,11 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 import hexHSL from "hex-to-hsl"
 import hexRGB from "hex-rgb"
+import { Colors } from "./Colors"
+import { Spacing } from "./Spacing"
+import { Breakpoints } from "./Breakpoints"
 
-import Colors from "./Colors"
-import Spacing from "./Spacing"
-import Breakpoints from "./Breakpoints"
-
-const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
-
+export const EasyAsPieUITheme = ({ colors = {}, spacing = {} }) => {
   Object.keys(Colors).map(key => ( Colors[key] = colors.hasOwnProperty(key) ? colors[key] : Colors[key] ))
   Object.keys(Spacing).map(key => ( Spacing[key] = spacing.hasOwnProperty(key) ? spacing[key] : Spacing[key] ))
 
@@ -588,4 +586,3 @@ const ReactCuttlefishTheme = ({colors = {}, spacing = {}}) => {
     />
   )
 }
-export default ReactCuttlefishTheme

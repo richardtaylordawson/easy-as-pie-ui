@@ -14,7 +14,7 @@ const Container = styled.div`
   }
 `
 
-const NavText = ({children, href, target}) => (
+export const NavText = ({children, href, target}) => (
   <Container>
     {
       (href)
@@ -29,5 +29,3 @@ NavText.propTypes = {
   href: PropTypes.string,
   target: PropTypes.string
 }
-
-export default NavText

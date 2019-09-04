@@ -1,4 +1,4 @@
-const Colors = {
+export const Colors = {
   "red": "#DB2828",
   "orange": "#F2711C",
   "yellow": "#FBBD08",
@@ -14,5 +14,3 @@ const Colors = {
   "light-grey": "#bbb",
   "black": "#1B1C1D"
 }
-
-module.exports = Colors

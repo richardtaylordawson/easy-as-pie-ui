@@ -19,7 +19,7 @@ const Constraint = styled.div`
   justify-content: space-between;
 `
 
-const Navbar = ({children, color}) => (
+export const Navbar = ({children, color}) => (
   <Container className={color ? `bg-${color}` : `bg-grey`}>
     <Constraint>
       {children}
@@ -31,5 +31,3 @@ Navbar.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string
 }
-
-export default Navbar

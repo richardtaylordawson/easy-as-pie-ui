@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import { Link } from "@reach/router"
 import styled from "@emotion/styled"
 
-import { ReactCuttlefishColors } from "react-cuttlefish"
+import { Colors } from "easy-as-pie-ui"
 
 const StyledLink = styled(Link)`
   padding: 0 20px;
@@ -12,7 +12,7 @@ const StyledLink = styled(Link)`
   display: block;
 
   &.active {
-    border-left: 2px solid ${ReactCuttlefishColors.blue};
+    border-left: 2px solid ${Colors.blue};
   }
 
   &:hover {

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Section, Columns } from "react-cuttlefish"
+import { Section, Columns } from "easy-as-pie-ui"
 
 import SideNav from "../components/SideNav"
 

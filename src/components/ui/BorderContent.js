@@ -2,14 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const Container = styled.div`
-  padding: 15px;
-  border-style: solid;
-  border-width: ${props => props.border};
-`
-
-const BorderContent = ({children, sides, color, size}) => {
-  const borderSize = size ? `${size}px` : "2px"
+export const BorderContent = ({children, sides, color, size}) => {
+  const borderSize = size ? `${size}` : "2px"
   let border;
 
   if(sides) {
@@ -31,11 +25,15 @@ const BorderContent = ({children, sides, color, size}) => {
   )
 }
 
+const Container = styled.div`
+  padding: 15px;
+  border-style: solid;
+  border-width: ${props => props.border};
+`
+
 BorderContent.propTypes = {
   children: PropTypes.node.isRequired,
   sides: PropTypes.string,
   color: PropTypes.string,
   size: PropTypes.string
 }
-
-export default BorderContent

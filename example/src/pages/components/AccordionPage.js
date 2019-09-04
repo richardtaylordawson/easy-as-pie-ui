@@ -1,5 +1,5 @@
 import React from "react"
-import { Accordion, BorderContent, Table } from "react-cuttlefish"
+import { Accordion, BorderContent, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -20,10 +20,10 @@ const SectionPage = () => (
         </Accordion>
       </BorderContent>
       <code>
-        &#60;Accordion color="green"&#62;
-          <div className="pl-md">&#60;h5&#62;Header&#60;/h5&#62;</div>
-          <div className="pl-md">&#60;p&#62;Content goes in here and can be toggled!&#60;/p&#62;</div>
-        &#60;/Section&#62;
+        <span class="text-yellow">&#60;Accordion <span class="text-pink">color="green"</span>&#62;</span>
+          <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">Header</span>&#60;/h5&#62;</div>
+          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Content goes in here and can be toggled!</span>&#60;/p&#62;</div>
+        <span class="text-yellow">&#60;/Accordion&#62;</span>
       </code>
     </div>
     <div className="mb-md">

@@ -1,35 +1,20 @@
 import React from "react"
-import { Section, Button } from "react-cuttlefish"
+import { Section, Button } from "easy-as-pie-ui"
 
 const Home  = () => (
   <Section>
     <div className="center-block text-center mb-xl mt-xl">
-      <h1 className="mb-sm text-blue">reactCuttleFish</h1>
-      <h6 className="mb-md">Collection of generic components <br/>that can be used to easily build a website.</h6>
-      <Button color="blue-outline" href="https://github.com/richardtaylordawson/react-cuttlefish" target="_blank">Github</Button>
+      <h1 className="mb-sm text-blue">Easy as Pie UI</h1>
+      <h6 className="mb-md">React component library that is easy as pie<br/> to theme and implement on any site.</h6>
+      <Button color="blue-outline" href="https://github.com/richardtaylordawson/easy-as-pie-ui" target="_blank">Github</Button>
       <Button color="blue" href="/components/button">Components</Button>
     </div>
     <div className="content-sm center-block mb-xl">
       <h4 className="text-red">Installation</h4>
       <hr/>
       <h5 className="mt-md">NPM</h5>
-      <p>Install reactCuttleFish and peer dependencies via NPM</p>
-      <code><span className="text-yellow">npm install</span> --save react-cuttlefish</code>
-    </div>
-    <div className="content-sm center-block">
-      <h4 className="text-red">About the Project</h4>
-      <hr/>
-      <h5 className="mt-md">Intro</h5>
-      <p>reactCuttleFish was built with ease in mind to help anyone get started quick and easily with any site. This library contains many UI and positioning components that are friendly and easy to use.</p>
-      <p>There are a few core concepts to understand in order to make the most out of this library.</p>
-      <ol>
-        <li>Your content is expected to be composed via props.children rather than using named props to pass in Components</li>
-        <li>Certain attributes can be passed in to change the look, apply modifier classes, enable different functionality, etc. All of these are defined in the components section</li>
-      </ol>
-      <p>Examples:</p>
-      <ul>
-        <li><span className="text-red">color</span> - applies color to <span className="text-red">Sections</span>, <span className="text-red">Buttons</span>, etc.</li>
-      </ul>
+      <p>Install Easy as Pie UI and peer dependencies via NPM</p>
+      <code><span className="text-yellow">npm install</span> --save easy-as-pie-ui</code>
     </div>
   </Section>
 )

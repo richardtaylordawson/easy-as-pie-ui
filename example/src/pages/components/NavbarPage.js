@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, Navbar, Nav, NavLink, Table } from "react-cuttlefish"
+import { BorderContent, Navbar, Nav, NavLink, Table } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
@@ -20,7 +20,7 @@ const NavbarPage = () => (
           </Nav>
         </Navbar>
       </BorderContent>
-      <code><span className="text-yellow">import</span> Navbar, Nav, NavLink <span className="text-warning">from</span> "react-cuttlefish"</code>
+      <code><span className="text-yellow">import</span> Navbar, Nav, NavLink <span className="text-warning">from</span> "easy-as-pie-ui"</code>
     </div>
     <div className="mb-md">
       <h4 className="mb-sm">Colors</h4>
@@ -54,7 +54,7 @@ const NavbarPage = () => (
           </Navbar>
         </div>
       </BorderContent>
-      <code><span className="text-yellow">import</span> Button <span className="text-warning">from</span> "react-cuttlefish"</code>
+      <code><span className="text-yellow">import</span> Button <span className="text-warning">from</span> "easy-as-pie-ui"</code>
     </div>
     <div className="mb-md">
       <h4>API</h4>
