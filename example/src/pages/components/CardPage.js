@@ -1,5 +1,5 @@
 import React from "react"
-import { BorderContent, Columns, Table, Card, CardContent, CardHeader } from "easy-as-pie-ui"
+import { BorderContent, Table, Card, CardContent, CardHeader } from "easy-as-pie-ui"
 
 import ComponentsLayout from "./../../layouts/ComponentsLayout"
 
