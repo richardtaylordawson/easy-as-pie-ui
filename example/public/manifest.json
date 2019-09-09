@@ -1,6 +1,6 @@
 {
-  "short_name": "easy",
-  "name": "easy",
+  "short_name": "easy-as-pie-ui-documentation",
+  "name": "easy-as-pie-ui-documentation",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

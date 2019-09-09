@@ -10,7 +10,7 @@ Several projects aided in inspiring this project. Notably they are:
 
 ## Run Project
 ```shell
-$ Coming Soon
+$ npm install && cd example && npm install
 ```
 
 ## Deployment

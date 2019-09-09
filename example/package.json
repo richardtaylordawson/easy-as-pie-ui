@@ -1,23 +1,29 @@
 {
-  "name": "easy-example",
-  "homepage": "https://richardtaylordawson.github.io/easy",
+  "name": "easy-as-pie-documentation",
+  "homepage": "https://easy-as-pie-ui.richarddawson.codes/",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "easy-as-pie-ui": "file:..",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "easy-as-pie-ui": "file:..",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
