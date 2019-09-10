@@ -1,9 +1,9 @@
 import React from "react"
-import { BorderContent, Section, Table } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { BorderContent, Section } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const SectionPage = () => (
+export const SectionPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Section</h3>
@@ -18,7 +18,7 @@ const SectionPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Section <span class="text-pink">color="olive"</span>&#62;</span>
-          <div className="pl-md">Content Goes Here </div>
+          <div className="pl-sm">Content Goes Here </div>
         <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
@@ -31,7 +31,7 @@ const SectionPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Section <span class="text-pink">color="orange" notch="top orange"</span>&#62;</span>
-          <div className="pl-md">Content Goes Here </div>
+          <div className="pl-sm">Content Goes Here </div>
         <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
@@ -44,7 +44,7 @@ const SectionPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Section <span class="text-pink">image="PATH_TO_IMAGE"</span>&#62;</span>
-          <div className="pl-md">Content Goes Here </div>
+          <div className="pl-sm">Content Goes Here </div>
         <span class="text-yellow">&#60;/Section&#62;</span>
       </code>
     </div>
@@ -101,6 +101,3 @@ const SectionPage = () => (
     </div>
   </ComponentsLayout>
 )
-
-export default SectionPage
-

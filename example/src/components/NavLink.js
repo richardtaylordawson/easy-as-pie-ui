@@ -2,6 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
+export const NavLink = ({ children, active, href }) => (
+  <Container activeLink={active}>
+    <a href={href}>{children}</a>
+  </Container>
+)
+
 const Container = styled.li`
   display: inline;
   cursor: pointer;
@@ -11,7 +17,6 @@ const Container = styled.li`
   a {
     position: relative;
     color: inherit;
-    text-decoration: none;
 
     &::before {
       content: '';
@@ -23,11 +28,12 @@ const Container = styled.li`
       background-color: #fff;
       transform-origin: center;
       transform: translate(-50%, 0) scaleX(0);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
 
     &:hover {
       color: #fff;
+      text-decoration: none;
     }
 
     &:hover::before {
@@ -35,12 +41,6 @@ const Container = styled.li`
     }
   }
 `
-
-export const NavLink = ({children, active, href}) => (
-  <Container activeLink={active}>
-    <a href={href}>{children}</a>
-  </Container>
-)
 
 NavLink.propTypes = {
   children: PropTypes.node.isRequired,

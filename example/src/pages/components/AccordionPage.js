@@ -1,9 +1,9 @@
 import React from "react"
-import { Accordion, BorderContent, Table } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { Accordion, BorderContent } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const SectionPage = () => (
+export const AccordionPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Accordion</h3>
@@ -21,8 +21,8 @@ const SectionPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Accordion <span class="text-pink">color="green"</span>&#62;</span>
-          <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">Header</span>&#60;/h5&#62;</div>
-          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Content goes in here and can be toggled!</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-teal">&#60;h5&#62;<span class="text-white">Header</span>&#60;/h5&#62;</div>
+          <div className="pl-sm text-teal">&#60;p&#62;<span class="text-white">Content goes in here and can be toggled!</span>&#60;/p&#62;</div>
         <span class="text-yellow">&#60;/Accordion&#62;</span>
       </code>
     </div>
@@ -55,6 +55,3 @@ const SectionPage = () => (
     </div>
   </ComponentsLayout>
 )
-
-export default SectionPage
-

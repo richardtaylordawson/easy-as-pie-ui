@@ -1,20 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { Section, Columns } from "easy-as-pie-ui"
+import { SideNav } from "./../components"
 
-import SideNav from "../components/SideNav"
-
-const Container = styled.div`
-  overflow-y: scroll;
-  padding: 10px 20px;
-  height: 75vh;
-  margin-right: 20px;
-  margin-top: 60px;
-`
-
-const ComponentsLayout = ({children}) => (
+export const ComponentsLayout = ({ children }) => (
   <Section>
-    <Columns split={[75, 25]} collapseMargin>
+    <Columns split={[75, 25]} collapseMargin={true}>
       <Container>
         {children}
       </Container>
@@ -25,4 +17,14 @@ const ComponentsLayout = ({children}) => (
   </Section>
 )
 
-export default ComponentsLayout
+const Container = styled.div`
+  overflow-y: auto;
+  padding: 10px 20px;
+  height: 75vh;
+  margin-right: 20px;
+  margin-top: 60px;
+`
+
+ComponentsLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+}

@@ -1,9 +1,9 @@
 import React from "react"
-import { BorderContent, Table, Card, CardContent, CardHeader } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { BorderContent, Card, CardContent, CardHeader } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const CardPage = () => (
+export const CardPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Card</h3>
@@ -24,12 +24,12 @@ const CardPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Card&#62;</span>
-          <div className="pl-md text-yellow">&#60;CardHeader</div>
-            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
-          <div className="pl-md text-yellow">&#60;/CardHeader&#62;</div>
-          <div className="pl-md text-yellow">&#60;CardContent&#62;</div>
-            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
-          <div className="pl-md text-yellow">&#60;/CardContent&#62;</div>
+          <div className="pl-sm text-yellow">&#60;CardHeader</div>
+            <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/CardHeader&#62;</div>
+          <div className="pl-sm text-yellow">&#60;CardContent&#62;</div>
+            <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/CardContent&#62;</div>
         <span class="text-yellow">&#60;/Card&#62;</span>
       </code>
     </div>
@@ -49,12 +49,12 @@ const CardPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Card&#62;</span>
-          <div className="pl-md text-yellow">&#60;CardHeader <span class="text-pink">color="orange"</span>&#62;</div>
-            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
-          <div className="pl-md text-yellow">&#60;/CardHeader&#62;</div>
-          <div className="pl-md text-yellow">&#60;CardContent&#62;</div>
-            <div className="pl-xl text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
-          <div className="pl-md text-yellow">&#60;/CardContent&#62;</div>
+          <div className="pl-sm text-yellow">&#60;CardHeader <span class="text-pink">color="orange"</span>&#62;</div>
+            <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">Default Card</span>&#60;h5&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/CardHeader&#62;</div>
+          <div className="pl-sm text-yellow">&#60;CardContent&#62;</div>
+            <div className="pl-md text-teal">&#60;h5&#62;<span class="text-white">This is the content of the card</span>&#60;h5&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/CardContent&#62;</div>
         <span class="text-yellow">&#60;/Card&#62;</span>
       </code>
     </div>
@@ -87,6 +87,3 @@ const CardPage = () => (
     </div>
   </ComponentsLayout>
 )
-
-export default CardPage
-

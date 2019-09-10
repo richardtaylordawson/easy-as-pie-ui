@@ -1,9 +1,9 @@
 import React from "react"
-import { BorderContent, Colors, Button, Table } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { BorderContent, Colors, Button } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const ButtonPage = () => (
+export const ButtonPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Button</h3>
@@ -80,6 +80,3 @@ const ButtonPage = () => (
     </div>
   </ComponentsLayout>
 )
-
-export default ButtonPage
-

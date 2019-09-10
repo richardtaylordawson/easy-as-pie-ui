@@ -1,9 +1,9 @@
 import React from "react"
-import { Columns, BorderContent, Table } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { Columns, BorderContent } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const ColumnsPage = () => (
+export const ColumnsPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Columns</h3>
@@ -22,9 +22,9 @@ const ColumnsPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Columns&#62;</span>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
         <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
@@ -41,9 +41,9 @@ const ColumnsPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Columns <span class="text-pink">split=&#123;&#91;25, 50, 35&#93;&#125;</span>&#62;</span>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
         <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
@@ -60,9 +60,9 @@ const ColumnsPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Columns <span class="text-pink">split=&#123;&#91;25, 50, 35&#93;&#125; collapseMargin=&#123;true&#125;</span>&#62;</span>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
-          <div className="pl-md text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 1</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 2</span>&#60;/div&#62;</div>
+          <div className="pl-sm text-teal">&#60;div&#62;<span class="text-white">Column 3</span>&#60;/div&#62;</div>
         <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
@@ -85,22 +85,19 @@ const ColumnsPage = () => (
             <td>The nodes that will map to each columned content.</td>
           </tr>
           <tr>
-            <td>collapseMargin</td>
-            <td>bool</td>
-            <td>false</td>
-            <td>Collapses the margin between the columns on desktop</td>
-          </tr>
-          <tr>
             <td>split</td>
             <td>array</td>
             <td></td>
             <td>An array of custom width values can be used instead of smart splitting the columns such as [25, 75] to split a two-column layout to 25% and 75%.</td>
+          </tr>
+          <tr>
+            <td>collapseMargin</td>
+            <td>bool</td>
+            <td>false</td>
+            <td>Collapses the margin between the columns on desktop</td>
           </tr>
         </tbody>
       </Table>
     </div>
   </ComponentsLayout>
 )
-
-export default ColumnsPage
-

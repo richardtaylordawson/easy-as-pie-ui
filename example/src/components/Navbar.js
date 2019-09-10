@@ -2,6 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
+export const Navbar = ({ children, color }) => (
+  <Container className={color ? `bg-${color}` : `bg-grey`}>
+    <Constraint>
+      {children}
+    </Constraint>
+  </Container>
+)
+
 const Container = styled.header`
   position: fixed;
   top: 0;
@@ -18,14 +26,6 @@ const Constraint = styled.div`
   align-items: center;
   justify-content: space-between;
 `
-
-export const Navbar = ({children, color}) => (
-  <Container className={color ? `bg-${color}` : `bg-grey`}>
-    <Constraint>
-      {children}
-    </Constraint>
-  </Container>
-)
 
 Navbar.propTypes = {
   children: PropTypes.node.isRequired,

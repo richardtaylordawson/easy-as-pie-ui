@@ -1,9 +1,9 @@
 import React from "react"
-import { BorderContent, Columns, Table } from "easy-as-pie-ui"
+import { ComponentsLayout } from "./../../layouts/ComponentsLayout"
+import { Table } from "./../../components/Table"
+import { BorderContent, Columns } from "easy-as-pie-ui"
 
-import ComponentsLayout from "./../../layouts/ComponentsLayout"
-
-const BorderContentPage = () => (
+export const BorderContentPage = () => (
   <ComponentsLayout>
     <div className="mb-lg">
       <h3>Border Content</h3>
@@ -20,8 +20,8 @@ const BorderContentPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;BorderContent&#62;</span>
-          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Border Content</span>&#60;/h2&#62;</div>
-          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-teal">&#60;h2&#62;<span class="text-white">Border Content</span>&#60;/h2&#62;</div>
+          <div className="pl-sm text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
         <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
@@ -43,14 +43,14 @@ const BorderContentPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;Columns&#62;</span>
-          <div className="pl-md text-yellow">&#60;BorderContent <span class="text-pink">sides="true true true true"</span>&#62;</div>
-            <div className="pl-xl text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
-            <div className="pl-xl text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
-          <div className="pl-md text-yellow">&#60;/BorderContent&#62;</div>
-          <div className="pl-md text-yellow">&#60;BorderContent <span class="text-pink">sides="true false false false"</span>&#62;</div>
-            <div className="pl-xl text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
-            <div className="pl-xl text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
-          <div className="pl-md text-yellow">&#60;/BorderContent&#62;</div>
+          <div className="pl-sm text-yellow">&#60;BorderContent <span class="text-pink">sides="true true true true"</span>&#62;</div>
+            <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
+            <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/BorderContent&#62;</div>
+          <div className="pl-sm text-yellow">&#60;BorderContent <span class="text-pink">sides="true false false false"</span>&#62;</div>
+            <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Sides</span>&#60;/h2&#62;</div>
+            <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-yellow">&#60;/BorderContent&#62;</div>
         <span class="text-yellow">&#60;/Columns&#62;</span>
       </code>
     </div>
@@ -66,8 +66,8 @@ const BorderContentPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;BorderContent <span class="text-pink">color="red"</span>&#62;</span>
-          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Color</span>&#60;/h2&#62;</div>
-          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-teal">&#60;h2&#62;<span class="text-white">Color</span>&#60;/h2&#62;</div>
+          <div className="pl-sm text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
         <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
@@ -83,8 +83,8 @@ const BorderContentPage = () => (
       </BorderContent>
       <code>
         <span class="text-yellow">&#60;BorderContent <span class="text-pink">size="5" color="orange" sides="true false false true"</span>&#62;</span>
-          <div className="pl-md text-teal">&#60;h2&#62;<span class="text-white">Size</span>&#60;/h2&#62;</div>
-          <div className="pl-md text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
+          <div className="pl-sm text-teal">&#60;h2&#62;<span class="text-white">Size</span>&#60;/h2&#62;</div>
+          <div className="pl-sm text-teal">&#60;p&#62;<span class="text-white">Look at the pretty border content</span>&#60;/p&#62;</div>
         <span class="text-yellow">&#60;/BorderContent&#62;</span>
       </code>
     </div>
@@ -129,6 +129,3 @@ const BorderContentPage = () => (
     </div>
   </ComponentsLayout>
 )
-
-export default BorderContentPage
-

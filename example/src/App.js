@@ -1,48 +1,26 @@
-import React, { Component } from "react"
+import React from "react"
 import { Router } from "@reach/router"
+import { MainLayout } from "./layouts/MainLayout"
+import { Index } from "./pages/Index"
+import { ColumnsPage } from "./pages/components/ColumnsPage"
+import { SectionPage } from "./pages/components/SectionPage"
+import { AccordionPage } from "./pages/components/AccordionPage"
+import { BorderContentPage } from "./pages/components/BorderContentPage"
+import { ButtonPage } from "./pages/components/ButtonPage"
+import { CardPage } from "./pages/components/CardPage"
 
-import MainLayout from "./layouts/MainLayout"
+export const App  = () => (
+  <MainLayout>
+    <Router>
+      <Index path={process.env.PUBLIC_URL + '/'} />
 
-// Main Page
-import Home from "./pages/Index"
+      <ColumnsPage path={process.env.PUBLIC_URL + '/components/columns'} />
+      <SectionPage path={process.env.PUBLIC_URL + '/components/section'} />
 
-// Getting Started Page
-import GettingStarted from "./pages/GettingStarted"
-
-// Position Pages
-import ColumnsPage from "./pages/components/ColumnsPage"
-import SectionPage from "./pages/components/SectionPage"
-
-// Components Pages
-import AccordionPage from "./pages/components/AccordionPage"
-import BorderContentPage from "./pages/components/BorderContentPage"
-import ButtonPage from "./pages/components/ButtonPage"
-import CardPage from "./pages/components/CardPage"
-import InputPage from "./pages/components/InputPage"
-import NavbarPage from "./pages/components/NavbarPage"
-
-class App extends Component {
-  render() {
-    return (
-      <MainLayout>
-        <Router>
-          <Home path={process.env.PUBLIC_URL + '/'} />
-
-          <GettingStarted path={process.env.PUBLIC_URL + '/getting-started'} />
-
-          <ColumnsPage path={process.env.PUBLIC_URL + '/components/columns'} />
-          <SectionPage path={process.env.PUBLIC_URL + '/components/section'} />
-
-          <AccordionPage path={process.env.PUBLIC_URL + '/components/accordion'} />
-          <BorderContentPage path={process.env.PUBLIC_URL + '/components/border-content'} />
-          <ButtonPage path={process.env.PUBLIC_URL + '/components/button'} />
-          <CardPage path={process.env.PUBLIC_URL + '/components/card'} />
-          <InputPage path={process.env.PUBLIC_URL + '/components/input'} />
-          <NavbarPage path={process.env.PUBLIC_URL + '/components/navbar'} />
-        </Router>
-      </MainLayout>
-    )
-  }
-}
-
-export default App;
+      <AccordionPage path={process.env.PUBLIC_URL + '/components/accordion'} />
+      <BorderContentPage path={process.env.PUBLIC_URL + '/components/border-content'} />
+      <ButtonPage path={process.env.PUBLIC_URL + '/components/button'} />
+      <CardPage path={process.env.PUBLIC_URL + '/components/card'} />
+    </Router>
+  </MainLayout>
+)

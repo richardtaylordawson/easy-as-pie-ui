@@ -517,10 +517,6 @@ export const EasyAsPieUITheme = ({ colors = {}, spacing = {} }) => {
 
         .text-white { color: #fff; }
 
-        .stronger {
-          font-weight: 800;
-        }
-
         /* Border Width */
         .bw-s-1 {
           border-width: 1px;

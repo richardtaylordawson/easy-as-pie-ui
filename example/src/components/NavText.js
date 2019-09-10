@@ -2,6 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
+export const NavText = ({ children, href, target }) => (
+  <Container>
+    {
+      (href)
+        ? <a href={href} target={target ? target : ""}>{children}</a>
+        : {children}
+    }
+  </Container>
+)
+
 const Container = styled.div`
   display: inline;
   cursor: pointer;
@@ -13,16 +23,6 @@ const Container = styled.div`
     color: inherit;
   }
 `
-
-export const NavText = ({children, href, target}) => (
-  <Container>
-    {
-      (href)
-        ? <a href={href} target={target ? target : ""}>{children}</a>
-        : {children}
-    }
-  </Container>
-)
 
 NavText.propTypes = {
   children: PropTypes.node.isRequired,
