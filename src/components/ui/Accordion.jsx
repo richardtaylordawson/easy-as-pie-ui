@@ -1,6 +1,8 @@
 import React, { Component } from "react"
-import styled from "@emotion/styled"
+import styledImport from "@emotion/styled"
 import PropTypes from "prop-types"
+
+const styled = styledImport.default || styledImport
 
 export class Accordion extends Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from "react"
-import { Global, css } from "@emotion/core"
+import { Global, css } from "@emotion/react"
 import hexHSL from "hex-to-hsl"
 import hexRGB from "hex-rgb"
 import { Colors } from "./Colors"

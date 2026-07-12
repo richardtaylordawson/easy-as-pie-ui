@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "@emotion/styled"
+import styledImport from "@emotion/styled"
+
+const styled = styledImport.default || styledImport
 
 export const Card = ({ children }) => (
   <Container className="bg-white box-shadow">{children}</Container>

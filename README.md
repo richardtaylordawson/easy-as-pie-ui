@@ -4,15 +4,20 @@
 
 ## Run Project
 
-In 1st terminal window
+Install dependencies:
 
 ```shell
-$ yarn && cd example && yarn
-$ yarn develop # runs rollup with watch flag
+yarn install
 ```
 
-In 2nd terminal window
+Build the component library:
 
 ```shell
-$ cd example && yarn develop # runs create-react-app dev server
+yarn build
+```
+
+Watch source files during development:
+
+```shell
+yarn develop
 ```

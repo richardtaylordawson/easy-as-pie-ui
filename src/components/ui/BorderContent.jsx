@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "@emotion/styled"
+import styledImport from "@emotion/styled"
+
+const styled = styledImport.default || styledImport
 
 export const BorderContent = ({ children, sides, color, size }) => {
   const borderSize = size ? `${size}` : "2px"
