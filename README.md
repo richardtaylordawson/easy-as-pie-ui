@@ -7,7 +7,7 @@
 Install dependencies:
 
 ```shell
-yarn install
+yarn
 ```
 
 Build the component library:
@@ -21,3 +21,7 @@ Watch source files during development:
 ```shell
 yarn develop
 ```
+
+## View Project
+
+<https://easy-as-pie-ui.richardtaylordawson.com>
