@@ -10,7 +10,13 @@ Install dependencies:
 yarn
 ```
 
-Build the component library:
+Run the documentation site locally:
+
+```shell
+yarn develop
+```
+
+Build the documentation site and component library:
 
 ```shell
 yarn build
@@ -19,7 +25,7 @@ yarn build
 Watch source files during development:
 
 ```shell
-yarn develop
+yarn develop:lib
 ```
 
 ## View Project

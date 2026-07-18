@@ -2,6 +2,7 @@
 export { Breakpoints } from "./theme/Breakpoints"
 export { Colors } from "./theme/Colors"
 export { EasyAsPieUITheme } from "./theme/EasyAsPieUITheme.jsx"
+export { Spacing } from "./theme/Spacing"
 
 // Main Styling/Position Components
 export { Columns } from "./components/Columns.jsx"

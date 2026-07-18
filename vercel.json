@@ -1,0 +1,5 @@
+{
+  "buildCommand": "corepack yarn build",
+  "installCommand": "corepack yarn install --immutable --mode=skip-build",
+  "outputDirectory": "dist"
+}

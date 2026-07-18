@@ -17,8 +17,11 @@
     "node": "^24.0.0"
   },
   "scripts": {
-    "build": "vite build",
-    "develop": "vite build --watch",
+    "build": "yarn build:docs && yarn build:lib",
+    "build:docs": "vite build --config vite.docs.config.js",
+    "build:lib": "vite build",
+    "develop": "vite --config vite.docs.config.js",
+    "develop:lib": "vite build --watch",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "prepare": "yarn build",
     "preview": "vite preview"
@@ -43,7 +46,8 @@
     "vite": "^8.1.5"
   },
   "files": [
-    "dist"
+    "dist/easy-as-pie-ui.cjs",
+    "dist/easy-as-pie-ui.js"
   ],
   "packageManager": "yarn@4.17.1"
 }

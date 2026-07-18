@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react"
 export default defineConfig({
   plugins: [react()],
   build: {
+    emptyOutDir: false,
+    copyPublicDir: false,
     lib: {
       entry: "src/index.js",
       name: "EasyAsPieUI",
