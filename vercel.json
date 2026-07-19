@@ -4,6 +4,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/images/social-share",
+      "destination": "/images/social-share.png"
+    },
+    {
       "source": "/components/:path*",
       "destination": "/index.html"
     }
